@@ -1,8 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Roman Poimtsev](https://up.htmlacademy.ru/adaptive-individual/1/user/2426581).
-* Наставник: `Анна
-Лисененкова`.
+* Наставник: [Анна
+Лисененкова] (https://htmlacademy.ru/profile/ankhena).
 
 ---
 
