@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body" style="width: 320px; height: 2935px;">
+  <body class="page__body" style="width: 320px; height: 2935px;"> <!--выставил размеры мобильной версии-->
     <!--ХЕДЕР-->
     <header class="main-header">
       <!--ЛОГО-->
@@ -45,36 +45,37 @@
     <!--MAIN-->
 <main class="main-container">
   <h1 class="visually-hidden">Интернет-магазин "Cat Energy"</h1>
-  <section class="section__1">
-  <h2 class="section__title">Функциональное питание для котов</h2>
+  <!--HERO-->
+  <section class="hero">
+  <h2 class="hero__title">Функциональное питание для котов</h2>
   <p class="slogan">занялся собой? займись котом!</p>
   <img src="img/index-can-mobile 1.jpg" alt="#">
   <a class="button button--green" href="#">подобрать программу</a>
 </section>
-<section class="section__2">
+<section class="programs">
   <div class="program program--slim">
 <h3 class="program__title">похудение</h3>
 <p class="program__description">Ваш кот весит больше собаки и <br>почти утратил способность лазить<br> по деревьям? Пора на диету! Cat <br>Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
-<a href="#">каталог slim</a>
+<a class="program__catalog" href="#">каталог slim</a>
   </div>
   <div class="program program--pro">
     <h3 class="program__title">набор массы</h3>
     <p class="program__description">Заработать авторитет среди <br>дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет <br>вашему коту нарастить<br> необходимые мышцы!</p>
-    <a href="#">каталог pro</a>
+    <a class="program__catalog" href="#">каталог pro</a>
   </div>
 </section>
-<section class="section__3"> <!--!блок преимуществ?-->
-  <h2 class="section__title">Как это работает</h2>
+<section class="advantages"> <!--!блок преимуществ?-->
+  <h2 class="advantages__title">Как это работает</h2>
   <div class="advantages__wrapper">
     <ul class="advantages__list">
       <li class="advantages__item advantages__item--healthy"> <!--! нужен ли класс модификатор для картинки?-->
-        <h4 class="visually-hidden">полезно</h4> <!--! нужен ли здесь класс advantages__title?-->
+        <h4 class="visually-hidden">сплошная польза</h4> <!--! нужен ли здесь класс advantages__title?-->
           <p class="advantages__description">Функциональное питание
             <br>содержит только полезные
             <br>питательные вещества.</p>
       </li>
-      <li class="advantages__item advantages__item--fast">
-        <h4 class="visually-hidden">быстро</h4>
+      <li class="advantages__item advantages__item--easy">
+        <h4 class="visually-hidden">легко готовится</h4>
         <p class="advantages__description">Выпускается в виде порошка,
           <br>который нужно лишь залить
           <br>кипятком и готово.</p>
@@ -86,17 +87,17 @@
           <br>функциональное питание.</p>
       </li>
       <li class="advantages__item advantages__item--result">
-        <h4 class="visually-hidden">результативно</h4>
+        <h4 class="visually-hidden">наглядный результат</h4>
         <p class="advantages__description">Уже через месяц <br>наслаждайтесь изменениями <br>к лучшему вашего питомца!</p>
       </li>
     </ul>
   </div>
 </section>
-<section class="section__4"> <!--!блок статистики?-->
-  <div class="section__wrapper slider"> <!--! не понимаю логику слайдера((-->
-  <header class="section__header">
-  <h2 class="section__title">Живой пример</h2>
-  <p class="section__text">Борис сбросил 5 кг за 2 месяца, просто <br>заменив свой обычный корм на Cat Energy <br>Slim. Отличный результат без изнуряющих <br>тренировок! При этом он не менял своих <br>привычек и по-прежнему спит по 16 часов <br>в день.
+<section class="stats"> <!--!блок статистики?-->
+  <div class="stats__wrapper slider"> <!--! не понимаю логику слайдера((-->
+  <header class="stats__header">
+  <h2 class="stats__title">Живой пример</h2>
+  <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто <br>заменив свой обычный корм на Cat Energy <br>Slim. Отличный результат без изнуряющих <br>тренировок! При этом он не менял своих <br>привычек и по-прежнему спит по 16 часов <br>в день.
   </p>
 </header>
 <dl class="stats__list slider__list"> <!--! приладил список слайдера-->
@@ -113,13 +114,38 @@
 <!--! ЗДЕсь должен быть слайдер?-->
 </div>
 </section>
+<section class="contacts">
+  <b class="contatts__title">приглашаем <br>к сотрудничеству <br>дилеров!</b>
+    <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8
+      Санкт-Петербург</p>
+      <img src="img/location-map.svg" alt="карта района города." width="320" height="362">
+</section>
 </main>
-
-
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-        href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная
-        вёрстка и автоматизация</a>».</p>
-
+<!--FOOTER-->
+<footer class="main-footer">
+  <div class="main-footer__wrapper">
+    <a class="main-footer__logo" href="#">
+      <img src="img/footer-logo.svg"
+        width="128" height="20"
+        alt="#">
+    </a>
+    <div class="main-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы во Вконтакте</a><!--! текст в А не должен быть виден на странице. он скрытый или должен относиться к alt?-->
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+      </ul>
+    </div>
+<div class="main-footer__copyright copyright">
+  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+</div>
+  </div>
+</footer>
   </body>
 </html>
