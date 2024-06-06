@@ -21,10 +21,13 @@
       </a>
       <!--НАВИГАЦИЯ-->
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <!--<button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+        </button>-->
+        <!--! ШАБЛОН ДЛЯ ВЕРСТКИ БУРГЕР_МЕНЮ-->
+        <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
+        <label class="burger" for="burger-checkbox"></label>
+        <div class="main-nav__wrapper"> <!--! не блокирует ли враппер действие кнопки бургер на список меню?-->
           <ul class="main-nav__list">
             <li class="list__item list__item--active">
               <a href="#">главная</a>
