@@ -30,65 +30,79 @@
           <!--! не блокирует ли враппер действие кнопки бургер на список меню?-->
           <ul class="main-nav__list">
             <li class="list__item">
-              <a href="#">главная</a>
+              <a href="index.html">главная</a>
             </li>
             <li class="list__item">
               <a href="#"></a>каталог продукции</a>
           </li>
-          <li class="list__item list__item--active"><a href="#">
-            </a>подбор программы</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<!--MAIN-->
-<main class="main-container main__form">
-  <!--!не уверен в правильности именования-->
-  <section class="questionary">
-    <h2 class="questionary__title">Подбор программы</h2>
-    <p class="questionary__text">
-      Заполните анкету, и мы подберем
-      <br>программу питания для вашего кота
-    </p>
-    <!--<input type="text">-->
-    <form
-      class="questionary__form"
-      action="https://echo.html.ru"
-      method="post"> <!--!название класса для form - масло масляное-->
-      <label for="questionary__name">Имя
-        <input
-          class="questionary__field"
-          placeholder="Барсик"
-          type="name"
-          name="questionary__name"
-          id="questionary__name">
-      </label>
-      <form
-        class="questionary__form"
-        action="https://echo.html.ru"
-        method="post">
-        <label for="questionary__weight">Вес (кг):
-          <input
-            class="questionary__field"
-            placeholder="7"
-            type="name"
-            name="questionary__name"
-            id="questionary__name">
-        </label>
+          <li class="list__item list__item--active"><a href="#">подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main class="main-container main__form">
+    <!--!не уверен в правильности именования-->
+    <section class="questionary">
+      <h2 class="questionary__title">Подбор программы</h2>
+      <p class="questionary__text"> <!--! не уверен-->
+        Заполните анкету, и мы подберем
+        <br>программу питания для вашего кота
+      </p>
+      <div class="cat-details"> <!--!-->
         <form
           class="questionary__form"
           action="https://echo.html.ru"
           method="post"> <!--!название класса для form - масло масляное-->
-          <label for="questionary__name">Имя
-            <input
-              class="questionary__field"
-              placeholder="Барсик"
-              type="name"
-              name="questionary__name"
-              id="questionary__name">
+          <label for="questionary__name">Имя</label>
+          <input
+            class="questionary__field"
+            placeholder="Барсик"
+            type="name"
+            name="questionary__name"
+            id="questionary__name">
+        </form>
+        <form
+          class="questionary__form"
+          action="https://echo.html.ru"
+          method="post">
+          <label for="questionary__weight">Вес (кг):
           </label>
-
-        </section>
-      </main>
-    </body>
+          <input
+            class="questionary__field"
+            placeholder="7"
+            type="number"
+            name="questionary__weight"
+            id="questionary__weight">
+        </form>
+        <form
+          class="questionary__form"
+          action="https://echo.html.ru"
+          method="post">
+          <label for="questionary__age">Возраст (лет):</label>
+          <input
+            class="questionary__field"
+            placeholder="7"
+            type="number"
+            name="questionary__age"
+            id="questionary__age">
+        </form>
+      </div>
+      <form>
+        <div class="chosen-program">
+          <label><input class="#" type="radio" name="program#" value="slim"
+              checked>похудение</label>
+          <br>
+          <label><input class="#" type="radio" name="program#" value="pro">набор
+            массы</label>
+          <br>
+          <label><input class="#" type="radio" name="program#" value="advise">не
+            знаю (нужен ваш
+            совет)</label> <!--! нейминг value-->
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
