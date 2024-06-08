@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог продукции</title>
+  </head>
+  <body class="page__body" style="width: 320px; height: 2935px;">
+    <header class="main-header">
+      <!--ЛОГО-->
+      <a class="main-header__logo" href="#">
+        <img
+          src="img/logo-mobile.svg"
+          width="33" height="38"
+          alt="логотип магазина.">
+      </a>
+      <a class="main-header__logo-2" href="#">
+        <img src="img/logo 2.svg"
+          width="101" height="18"
+          alt="Кэт энерджи.">
+      </a>
+      <!--НАВИГАЦИЯ-->
+      <nav class="main-nav">
+        <!--<button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>-->
+        <!--! ШАБЛОН ДЛЯ ВЕРСТКИ БУРГЕР_МЕНЮ-->
+        <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
+        <label class="burger" for="burger-checkbox"></label>
+        <div class="main-nav__wrapper">
+          <!--! не блокирует ли враппер действие кнопки бургер на список меню?-->
+          <ul class="main-nav__list">
+            <li class="list__item">
+              <a href="index.html">главная</a>
+            </li>
+            <li class="list__item list__item--active">
+              <a href="#"></a>каталог продукции</a>
+          </li>
+          <li class="list__item"><a href="form.html">подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main class="main-container main__form">
+  </main>
+  <!--FOOTER-->
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo" href="#">
+        <img src="img/footer-logo.svg"
+          width="128" height="20"
+          alt="#">
+      </a>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte"
+              href="https://vk.com/htmlacademy">Мы во
+              Вконтакте</a><!--! текст в А не должен быть виден на странице. он скрытый или должен относиться к alt?-->
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram"
+              href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
