@@ -5,44 +5,46 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body" style="width: 320px; height: 2935px;">
-    <!--!выставил размеры мобильной версии-->
+    <!--!временно выставил размеры мобильной версии в стилях body для визуального удобства-->
     <!--ХЕДЕР-->
     <header class="main-header">
-      <!--ЛОГО-->
-      <a class="main-header__logo" href="#">
-        <img
-          src="img/logo-mobile.svg"
-          width="33" height="38"
-          alt="логотип магазина.">
-      </a>
-      <a class="main-header__logo-2" href="#">
-        <img src="img/logo 2.svg"
-          width="101" height="18"
-          alt="Кэт энерджи.">
-      </a>
-      <!--НАВИГАЦИЯ-->
-      <nav class="main-nav">
-        <!--<button class="main-nav__toggle" type="button">
+      <div class="main-header__wrapper">
+        <!--ЛОГО-->
+        <a class="main-header__logo" href="#">
+          <img
+            src="img/logo-mobile.svg"
+            width="33" height="38"
+            alt="логотип магазина.">
+        </a>
+        <a class="main-header__logo-2" href="#">
+          <img src="img/logo 2.svg"
+            width="101" height="18"
+            alt="Кэт энерджи.">
+        </a>
+        <!--НАВИГАЦИЯ-->
+        <nav class="main-nav">
+          <!--<button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>-->
-        <!--! ШАБЛОН ДЛЯ ВЕРСТКИ БУРГЕР_МЕНЮ-->
-        <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
-        <label class="burger" for="burger-checkbox"></label>
-        <div class="main-nav__wrapper">
-          <!--! не блокирует ли враппер действие кнопки бургер на список меню?-->
-          <ul class="main-nav__list">
-            <li class="list__item list__item--active">
-              <a href="#">главная</a>
-            </li>
-            <li class="list__item">
-              <a href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="list__item"><a href="form.html">
-                подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <!--! ШАБЛОН ДЛЯ ВЕРСТКИ БУРГЕР_МЕНЮ-->
+          <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
+          <label class="burger" for="burger-checkbox"></label>
+          <div class="main-nav__wrapper">
+            <!--! Q не блокирует ли враппер действие кнопки бургер на список меню?-->
+            <ul class="main-nav__list">
+              <li class="list__item list__item--active">
+                <a href="#">главная</a>
+              </li>
+              <li class="list__item">
+                <a href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="list__item"><a href="form.html">
+                  подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!--MAIN-->
     <main class="main-container">
@@ -53,32 +55,33 @@
         <p class="slogan">занялся собой? займись котом!</p>
         <img src="img/index-can-mobile 1.jpg" alt="#">
         <a class="button button--green" href="#">подобрать программу</a>
+        <!--! Q или правильнее прописать модификатор как на сайте БЭМ -  button_green ?-->
       </section>
-      <section class="programs">
-        <div class="program program--slim">
-          <h3 class="program__title">похудение</h3>
-          <p class="program__description">Ваш кот весит больше собаки и
+      <section class="diet-program">
+        <div class="diet-program diet-program--slim">
+          <h3 class="diet-program__title">похудение</h3>
+          <p class="diet-program__description">Ваш кот весит больше собаки и
             <br>почти утратил способность лазить<br> по деревьям? Пора на диету!
             Cat <br>Energy Slim поможет вашему<br> питомцу сбросить лишний
             вес.</p>
-          <a class="program__catalog" href="#">каталог slim</a>
+          <a class="diet-program__catalog" href="#">каталог slim</a>
         </div>
-        <div class="program program--pro">
-          <h3 class="program__title">набор массы</h3>
-          <p class="program__description">Заработать авторитет среди
+        <div class="diet-program diet-program--pro">
+          <h3 class="diet-program__title">набор массы</h3>
+          <p class="diet-program__description">Заработать авторитет среди
             <br>дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет
             <br>вашему коту нарастить<br> необходимые мышцы!</p>
-          <a class="program__catalog" href="#">каталог pro</a>
+          <a class="diet-program__catalog" href="#">каталог pro</a>
         </div>
       </section>
-      <section class="advantages"> <!--!блок преимуществ?-->
+      <section class="advantages"> <!--! Q блок преимуществ?-->
         <h2 class="advantages__title">Как это работает</h2>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--healthy">
-              <!--! нужен ли класс модификатор для картинки?-->
+              <!--! Q нужен ли класс-модификатор для картинки?-->
               <h4 class="visually-hidden">сплошная польза</h4>
-              <!--! нужен ли здесь класс advantages__title?-->
+              <!--! Q нужен ли здесь класс advantages__title?-->
               <p class="advantages__description">Функциональное питание
                 <br>содержит только полезные
                 <br>питательные вещества.</p>
@@ -91,7 +94,7 @@
             </li>
             <li class="advantages__item advantages__item--diet">
               <h4 class="visually-hidden">диета</h4>
-              <!--!затрудняюсь придумать название заголовку-->
+              <!--! Q затрудняюсь придумать название заголовку-->
               <p class="advantages__description">Замените один-два приема
                 <br>обычной еды на наше
                 <br>функциональное питание.</p>
@@ -104,7 +107,7 @@
           </ul>
         </div>
       </section>
-      <section class="stats"> <!--!блок статистики?-->
+      <section class="stats"> <!--! Q блок статистики?-->
         <div class="stats__wrapper slider">
           <!--! не понимаю логику слайдера((-->
           <header class="stats__header">
@@ -119,7 +122,7 @@
             <!--! приладил список слайдера-->
             <div class="stats__item slider__item">
               <dt class="stats__number">5 кг</dt>
-              <!--!допустим ли в number текст с цифрами?-->
+              <!--! Q допустим ли в number текст с цифрами?-->
               <dd class="stats__desctription">снижение <br>веса</dd>
             </div>
             <div class="stats__item"></div>
@@ -129,7 +132,7 @@
           <p>затраты на питание: 15 000 руб.</p> <!--!класс p?-->
           <img src="img/compare-slider.jpg"
             alt="Борис до и после курса питания.">
-          <!--! ЗДЕсь должен быть слайдер?-->
+          <!--! ЗДЕсь должен быть сверстан слайдер?-->
         </div>
       </section>
       <section class="contacts">
@@ -154,7 +157,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy">Мы во
-                Вконтакте</a><!--! текст в А не должен быть виден на странице. он скрытый или должен относиться к alt?-->
+                Вконтакте</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube"

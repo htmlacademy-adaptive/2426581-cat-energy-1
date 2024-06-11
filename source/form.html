@@ -7,13 +7,13 @@
   <body class="page__body" style="width: 320px; height: 2935px;">
     <header class="main-header">
       <!--ЛОГО-->
-      <a class="main-header__logo" href="#">
+      <a class="main-header__logo" href="index.html">
         <img
           src="img/logo-mobile.svg"
           width="33" height="38"
           alt="логотип магазина.">
       </a>
-      <a class="main-header__logo-2" href="#">
+      <a class="main-header__logo-2" href="index.html">
         <img src="img/logo 2.svg"
           width="101" height="18"
           alt="Кэт энерджи.">
@@ -23,11 +23,9 @@
         <!--<button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>-->
-        <!--! ШАБЛОН ДЛЯ ВЕРСТКИ БУРГЕР_МЕНЮ-->
         <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
         <label class="burger" for="burger-checkbox"></label>
         <div class="main-nav__wrapper">
-          <!--! не блокирует ли враппер действие кнопки бургер на список меню?-->
           <ul class="main-nav__list">
             <li class="list__item">
               <a href="index.html">главная</a>
@@ -45,11 +43,12 @@
     </header>
     <!--MAIN-->
     <main class="main-container main__form">
-      <!--!не уверен в правильности именования-->
+      <!--! Q не уверен в правильности именования класса-->
       <section class="questionary">
         <div class="questionary__wrapper">
           <h2 class="questionary__title">Подбор программы</h2>
-          <p class="questionary__text"> <!--! не уверен-->
+          <p class="questionary__text">
+            <!--! Q не уверен в правильности именования класса-->
             Заполните анкету, и мы подберем
             <br>программу питания для вашего кота
           </p>
@@ -87,18 +86,21 @@
                 id="questionary__age">
             </fieldset>
             <fieldset class="chosen-program">
-              <legend class="visually-hidden"><h3>Выбор программы</h3></legend>
-              <label><input class="#" type="radio" name="program#" value="slim"
+              <legend class="visually-hidden"><h3>Выбор
+                  программы</h3></legend><!--! Q трудности с правильным подбором названия программ на английском - gain, loose, slim, pro -->
+              <label><input class="loosing-weight" type="radio"
+                  name="loosing-weight" value="slim"
                   checked>похудение</label>
               <br>
-              <label><input class="#" type="radio" name="program#"
+              <label><input class="gaining-weight" type="radio"
+                  name="gaining-weight"
                   value="pro">набор
                 массы</label>
               <br>
               <label><input class="#" type="radio" name="program#"
                   value="advise">не
                 знаю (нужен ваш
-                совет)</label> <!--! нейминг value-->
+                совет)</label> <!--! Q проблемный нейминг value-->
             </fieldset>
             <fieldset class="owner-details"> <!--!-->
               <legend><h3>Контактные данные
@@ -123,9 +125,9 @@
                 id="ongoings">расскажите обо всех повадках кота</textarea>
             </fieldset>
             <fieldset class="additions">
-              <!--!именование класса не продолжается далее. конфликт между связанными секциями формы и каталога-->
+              <!--! Q проблема адекватного именования классов в разделе. полагаю, тут возможен конфликт между связанными секциями страниц формы и каталога-->
               <legend><h3>дополнительно</h3></legend>
-              <!--!почему легенда? я уже не помню-->
+              <!--почему легенда? я уже не помню-->
               <input class="additional__products" type="checkbox" id="sweetener"
                 checked><label for="sweetener">сахарозаменитель</label>
               <br>
@@ -166,7 +168,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy">Мы во
-                Вконтакте</a><!--! текст в А не должен быть виден на странице. он скрытый или должен относиться к alt?-->
+                Вконтакте</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube"
