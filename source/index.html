@@ -16,8 +16,8 @@
             width="33" height="38"
             alt="логотип магазина.">
         </a>
-        <a class="main-header__logo-2" href="#">
-          <img src="img/logo 2.svg"
+        <a class="main-header__logo-text" href="#">
+          <img src="img/logo-text.svg"
             width="101" height="18"
             alt="Кэт энерджи.">
         </a>
@@ -53,7 +53,7 @@
       <section class="hero">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="slogan">занялся собой? займись котом!</p>
-        <img src="img/index-can-mobile 1.jpg" alt="#">
+        <img src="img/index-can-mobile1.jpg" alt="#">
         <a class="button button--green" href="#">подобрать программу</a>
         <!--! Q или правильнее прописать модификатор как на сайте БЭМ -  button_green ?-->
       </section>
@@ -118,29 +118,35 @@
               своих <br>привычек и по-прежнему спит по 16 часов <br>в день.
             </p>
           </header>
-          <dl class="stats__list slider__list">
-            <!--! приладил список слайдера-->
-            <div class="stats__item slider__item">
-              <dt class="stats__number">5 кг</dt>
-              <!--! Q допустим ли в number текст с цифрами?-->
-              <dd class="stats__desctription">снижение <br>веса</dd>
+          <div class="stats__wrapper">
+            <!--! враппер нужен для стилизации Веса и Времени-->
+            <div class="stats__weight">
+              <b>5 кг</b>
+              <br>
+              <small>снижение<br> веса</small>
             </div>
-            <div class="stats__item"></div>
-            <dt class="stats__number">60 дней</dt>
-            <dd class="stats__desctription"> затрачено <br>времени</dd>
-          </dl>
-          <p>затраты на питание: 15 000 руб.</p> <!--!класс p?-->
+            <div class="stats__time">
+              <b>60 дней</b>
+              <br>
+              <small>затрачено<br> времени</small>
+            </div>
+          </div>
+          <div class="stats__price">
+            <span>затраты на питание: 15 000 руб.</span>
+          </div>
           <img src="img/compare-slider.jpg"
             alt="Борис до и после курса питания.">
           <!--! ЗДЕсь должен быть сверстан слайдер?-->
         </div>
       </section>
       <section class="contacts">
+        <h2 class="visually-hidden">Свяжитесь с нами</h2>
         <b class="contatts__title">приглашаем <br>к сотрудничеству
           <br>дилеров!</b>
         <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8
           Санкт-Петербург</p>
-        <img src="img/location-map.svg" alt="карта района города." width="320"
+        <img src="img/location-map.svg" alt="карта района города."
+          width="320"
           height="362">
       </section>
     </main>
@@ -161,7 +167,8 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube"
-                href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+                href="https://www.youtube.com/user/htmlacademyru">Мы в
+                Ютубе</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram"
@@ -171,7 +178,8 @@
         </div>
         <div class="main-footer__copyright copyright">
           <a class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            href="https://htmlacademy.ru/intensive/adaptive">HTML
+            Academy</a>
         </div>
       </div>
     </footer>
