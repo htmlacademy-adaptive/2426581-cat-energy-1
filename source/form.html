@@ -43,7 +43,7 @@
     </header>
     <!--MAIN-->
     <main class="main-container main__form">
-      <!--! Q не уверен в правильности именования класса-->
+      <!--! Q не уверен в правильности именования класса секции-->
       <section class="questionary">
         <div class="questionary__wrapper">
           <h2 class="questionary__title">Подбор программы</h2>
@@ -59,7 +59,7 @@
             <fieldset class="cat-details"> <!--!-->
               <legend class="visually-hidden"><h3>Персональные данные
                   кота</h3></legend>
-              <!--!или лучше скрытый заголовок h3?-->
+              <!--! Q или лучше не использовать legenda и оставить скрытый заголовок h3?-->
               <label for="questionary__name">Имя<sup>*</sup></label>
               <input
                 class="questionary__field"
@@ -98,11 +98,12 @@
                 массы</label>
               <br>
               <label><input class="#" type="radio" name="program#"
-                  value="advise">не
+                  value="advise#">не
                 знаю (нужен ваш
-                совет)</label> <!--! Q проблемный нейминг value-->
+                совет)</label>
+              <!--! Q затрудняюсь адекватно поименовать value-->
             </fieldset>
-            <fieldset class="owner-details"> <!--!-->
+            <fieldset class="owner-details">
               <legend><h3>Контактные данные
                   (владельца кота)</h3></legend>
               <label for="email">e-mail:<sup>*</sup>
@@ -125,9 +126,9 @@
                 id="ongoings">расскажите обо всех повадках кота</textarea>
             </fieldset>
             <fieldset class="additions">
-              <!--! Q проблема адекватного именования классов в разделе. полагаю, тут возможен конфликт между связанными секциями страниц формы и каталога-->
+              <!--! Q проблема адекватного именования классов в филдсете. полагаю, конфликтуют связанные секции страниц формы и каталога-->
               <legend><h3>дополнительно</h3></legend>
-              <!--почему легенда? я уже не помню-->
+              <!--! Q внезапно понял, что забыл что такое легенда и зачем здесь нужна (помимо заголовка)-->
               <input class="additional__products" type="checkbox" id="sweetener"
                 checked><label for="sweetener">сахарозаменитель</label>
               <br>
