@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/2426581-cat-energy-1/3/">
+</head>
+  <body class="page__body" style="width: 320px; height: 2935px;">
+    <!--!временно выставил размеры мобильной версии в стилях body для визуального удобства-->
+    <!--ХЕДЕР-->
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <!--ЛОГО-->
+        <a class="main-header__logo" href="#">
+          <img
+            src="img/logo-mobile.svg"
+            width="33" height="38"
+            alt="логотип магазина.">
+        </a>
+        <a class="main-header__logo-text" href="#">
+          <img src="img/logo-text.svg"
+            width="101" height="18"
+            alt="Кэт энерджи.">
+        </a>
+        <!--НАВИГАЦИЯ-->
+        <nav class="main-nav">
+          <!--<button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>-->
+          <!--! ШАБЛОН ДЛЯ ВЕРСТКИ БУРГЕР_МЕНЮ-->
+          <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
+          <label class="burger" for="burger-checkbox"></label>
+          <div class="main-nav__wrapper">
+            <!--! Q не блокирует ли враппер действие кнопки бургер на список меню?-->
+            <ul class="main-nav__list">
+              <li class="list__item list__item--active">
+                <a href="#">главная</a>
+              </li>
+              <li class="list__item">
+                <a href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="list__item"><a href="form.html">
+                  подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--MAIN-->
+    <main class="main-container">
+      <h1 class="visually-hidden">Интернет-магазин "Cat Energy"</h1>
+      <!--HERO-->
+      <section class="hero">
+        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <p class="hero__slogan">занялся собой? займись котом!</p>
+        <img src="img/index-can-mobile1.jpg" alt="#">
+        <a class="hero__button button--green" href="#">подобрать программу</a>
+        <!--! Q или правильнее прописать модификатор как на сайте БЭМ -  button_green ?-->
+      </section>
+      <section class="diet-program">
+        <div class="diet-program diet-program--slim">
+          <!--первый класс совпадает с классом секции, не хорошо-->
+          <h3 class="diet-program__title">похудение</h3>
+          <p class="diet-program__description">Ваш кот весит больше собаки и
+            <br>почти утратил способность лазить<br> по деревьям? Пора на диету!
+            Cat <br>Energy Slim поможет вашему<br> питомцу сбросить лишний
+            вес.</p>
+          <a class="diet-program__catalog" href="#">каталог slim</a>
+        </div>
+        <div class="diet-program diet-program--pro">
+          <!--первый класс совпадает с классом секции, не хорошо-->
+          <h3 class="diet-program__title">набор массы</h3>
+          <p class="diet-program__description">Заработать авторитет среди
+            <br>дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет
+            <br>вашему коту нарастить<br> необходимые мышцы!</p>
+          <a class="diet-program__catalog" href="#">каталог pro</a>
+        </div>
+      </section>
+      <section class="advantages"> <!--! Q блок преимуществ?-->
+        <h2 class="advantages__title">Как это работает</h2>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--healthy">
+              <!--! Q нужен ли класс-модификатор для картинки?-->
+              <h4 class="visually-hidden">сплошная польза</h4>
+              <!--! Q нужен ли здесь класс advantages__title?-->
+              <p class="advantages__description">Функциональное питание
+                <br>содержит только полезные
+                <br>питательные вещества.</p>
+            </li>
+            <li class="advantages__item advantages__item--easy">
+              <h4 class="visually-hidden">легко готовится</h4>
+              <p class="advantages__description">Выпускается в виде порошка,
+                <br>который нужно лишь залить
+                <br>кипятком и готово.</p>
+            </li>
+            <li class="advantages__item advantages__item--diet">
+              <h4 class="visually-hidden">диета##</h4>
+              <!--! Q затрудняюсь придумать название заголовку-->
+              <p class="advantages__description">Замените один-два приема
+                <br>обычной еды на наше
+                <br>функциональное питание.</p>
+            </li>
+            <li class="advantages__item advantages__item--result">
+              <h4 class="visually-hidden">наглядный результат</h4>
+              <p class="advantages__description">Уже через месяц
+                <br>наслаждайтесь изменениями <br>к лучшему вашего питомца!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="stats"> <!--! Q блок статистики?-->
+        <div class="stats__wrapper slider">
+          <!--! не понимаю логику слайдера((-->
+          <header class="stats__header">
+            <h2 class="stats__title">Живой пример</h2>
+            <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто
+              <br>заменив свой обычный корм на Cat Energy <br>Slim. Отличный
+              результат без изнуряющих <br>тренировок! При этом он не менял
+              своих <br>привычек и по-прежнему спит по 16 часов <br>в день.
+            </p>
+          </header>
+          <div class="stats__wrapper">
+            <!--! враппер нужен для стилизации Веса и Времени-->
+            <div class="stats__weight">
+              <b>5 кг</b>
+              <br>
+              <small>снижение<br> веса</small>
+            </div>
+            <div class="stats__time">
+              <b>60 дней</b>
+              <br>
+              <small>затрачено<br> времени</small>
+            </div>
+          </div>
+          <div class="stats__price">
+            <span>затраты на питание: 15 000 руб.</span>
+          </div>
+          <img src="img/compare-slider.jpg"
+            alt="Борис до и после курса питания.">
+          <!-- ЗДЕсь должен быть сверстан слайдер-->
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Свяжитесь с нами</h2>
+        <b class="contatts__title">приглашаем <br>к сотрудничеству
+          <br>дилеров!</b>
+        <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+        <img src="img/location-map.svg" alt="карта района города."
+          width="320"
+          height="362">
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo" href="#">
+          <img src="img/footer-logo.svg"
+            width="128" height="20"
+            alt="#">
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy">Мы во
+                Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru">Мы в
+                Ютубе</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive">HTML
+            Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
