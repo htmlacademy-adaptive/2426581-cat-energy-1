@@ -23,21 +23,23 @@
         </span>
         <!--НАВИГАЦИЯ-->
         <nav class="navigation">
-          <!--! здесь будет бургер-кнопка-->
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list menu-list">
             <li class="menu-list__item menu-list__item--current">
-              <a href="#">главная</a>
+              <a href="#">Главная</a>
+              <!--! Q меняю на span? или даю ссылку на саму себя?-->
             </li>
             <li class="menu-list__item">
-              <a href="catalog.html">каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu-list__item"><a href="form.html">
-                подбор программы</a>
+                Подбор программы</a>
             </li>
           </ul>
+          <a class="### button" href="#">Подобрать программу</a>
+          <!--! ссылка или кнопка? вот в чем вопрос-->
         </nav>
       </div>
     </header>
@@ -50,27 +52,24 @@
         <p class="hero__slogan">занялся собой? займись котом!</p>
         <img src="img/index-can-mobile1.jpg" alt="#">
         <a class="hero__button button" href="#">подобрать программу</a>
-        <!--! Q или правильнее прописать модификатор как на сайте БЭМ -  button_green ?-->
       </section>
-      <section class="diet-program">
-        <div class="diet-program diet-program--slim">
-          <!--первый класс совпадает с классом секции, не хорошо-->
-          <h3 class="diet-program__title">похудение</h3>
-          <p class="diet-program__description">Ваш кот весит больше собаки и
-            <br>почти утратил способность лазить<br> по деревьям? Пора на
-            диету!
-            Cat <br>Energy Slim поможет вашему<br> питомцу сбросить лишний
-            вес.</p>
-          <a class="diet-program__catalog" href="#">каталог slim</a>
-        </div>
-        <div class="diet-program diet-program--pro">
-          <!--первый класс совпадает с классом секции, не хорошо-->
-          <h3 class="diet-program__title">набор массы</h3>
-          <p class="diet-program__description">Заработать авторитет среди
-            <br>дворовых котов и даже собак?<br> Серия Cat Energy Pro поможет
-            <br>вашему коту нарастить<br> необходимые мышцы!</p>
-          <a class="diet-program__catalog" href="#">каталог pro</a>
-        </div>
+      <section class="program">
+        <ul class="program__list">
+          <li class="program__item program__item--slim">
+            <h3 class="program__title">похудение</h3>
+            <p class="program__description">Ваш кот весит больше собаки и
+              почти утратил способность лазить по деревьям? Пора на диету!
+              Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="program__catalog" href="#">каталог slim</a>
+          </li>
+          <li class="program__item program__item--pro">
+            <h3 class="program__title">набор массы</h3>
+            <p class="program__description">Заработать авторитет среди
+              дворовых котов и даже собак? Серия Cat Energy Pro
+              поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="program__catalog" href="#">каталог pro</a>
+          </li>
+        </ul>
       </section>
       <section class="advantages"> <!--! Q блок преимуществ?-->
         <h2 class="advantages__title">Как это работает</h2>
