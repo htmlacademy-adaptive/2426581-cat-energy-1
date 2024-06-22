@@ -6,78 +6,66 @@
     <base href="https://htmlacademy-adaptive.github.io/2426581-cat-energy-1/3/">
 </head>
   <body class="page__body" style="width: 320px; height: 2935px;">
-    <header class="main-header">
+    <header class="header">
       <!--ЛОГО-->
-      <a class="main-header__logo" href="#">
+      <a class="logo logo--icon" href="index.html">
         <img
-          src="img/logo-mobile.svg"
+          src="img/logo-icon.svg"
           width="33" height="38"
           alt="логотип магазина.">
       </a>
-      <a class="main-header__logo-text" href="#">
-        <img src="img/logo-text.svg"
+      <a class="logo logo--name" href="index.html">
+        <img src="img/logo-name.svg"
           width="101" height="18"
           alt="Кэт энерджи.">
       </a>
       <!--НАВИГАЦИЯ-->
-      <nav class="main-nav">
-        <!--<button class="main-nav__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-        </button>-->
-        <input class="burger-checkbox" type="checkbox" id="burger-checkbox">
-        <label class="burger" for="burger-checkbox"></label>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="list__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="list__item">
-              <a href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="list__item list__item--active"><a href="#">подбор
-                программы
-              </a>
-            </li>
-          </ul>
-        </div>
+        </button>
+        <ul class="navigation__list menu-list">
+          <li class="menu-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#">Каталог продукции</a>
+          </li>
+          <li class="menu-list__item menu-list__item--current">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!--MAIN-->
-    <main class="main-container main__form">
-      <!--! Q не уверен в правильности именования класса секции-->
+    <main class="main-container main-container--form">
       <section class="questionary">
         <div class="questionary__wrapper">
           <h2 class="questionary__title">Подбор программы</h2>
           <p class="questionary__text">
-            <!--! Q не уверен в правильности именования класса-->
             Заполните анкету, и мы подберем
-            <br>программу питания для вашего кота
+            программу&nbsp;питания для вашего кота
           </p>
           <form
-            class="questionary__form"
-            action="https://echo.html.ru"
-            method="post"> <!--!название класса для form - масло масляное-->
-            <fieldset class="cat-details"> <!--!-->
-              <legend class="visually-hidden"><h3>Персональные данные
-                  кота</h3></legend>
-              <!--! Q или лучше не использовать legenda и оставить скрытый заголовок h3?-->
-              <label for="questionary__name">Имя<sup>*</sup></label>
+            class="questionary__form form"
+            action="https://echo.html.ru">
+            <fieldset class="cat-details">
+              <legend class="visually-hidden">Персональные данные
+                кота</legend>
+              <label for="questionary__name">Имя*</label>
               <input
                 class="questionary__field"
                 placeholder="Барсик"
                 type="text"
                 name="questionary__name"
                 id="questionary__name">
-              <br>
-              <label for="questionary__weight">Вес (кг):<sup>*</sup>
-              </label>
+              <label for="questionary__weight">Вес (кг):*</label>
               <input
                 class="questionary__field"
                 placeholder="7"
                 type="number"
                 name="questionary__weight"
                 id="questionary__weight">
-              <br>
               <label for="questionary__age">Возраст (лет):</label>
               <input
                 class="questionary__field"
@@ -87,106 +75,109 @@
                 id="questionary__age">
             </fieldset>
             <fieldset class="chosen-program">
-              <legend class="visually-hidden"><h3>Выбор
-                  программы</h3></legend><!--! Q трудности с правильным подбором названия программ на английском - gain, loose, slim, pro -->
-              <label><input class="loosing-weight" type="radio"
+              <legend class="visually-hidden">Выбор программы</legend>
+              <label>
+                <input class="loosing-weight" type="radio"
                   name="loosing-weight" value="slim"
-                  checked>похудение</label>
-              <br>
-              <label><input class="gaining-weight" type="radio"
+                  checked>Похудение
+              </label>
+              <label>
+                <input class="gaining-weight" type="radio"
                   name="gaining-weight"
-                  value="pro">набор
-                массы</label>
-              <br>
-              <label><input class="#" type="radio" name="program#"
-                  value="advise#">не
-                знаю (нужен ваш
-                совет)</label>
-              <!--! Q затрудняюсь адекватно поименовать value-->
+                  value="pro">Набор массы
+              </label>
+              <label>
+                <input class="advise" type="radio" name="advise"
+                  value="advise">Не знаю (нужен ваш совет)
+              </label>
             </fieldset>
             <fieldset class="owner-details">
-              <legend><h3>Контактные данные
-                  (владельца кота)</h3></legend>
-              <label for="email">e-mail:<sup>*</sup>
-              </label>
+              <legend>Контактные данные (владельца кота)</legend>
+              <label for="email">e-mail:*</label>
               <input
-                class="questionary__field"
-                placeholder="kuklachev@gmail.com"
-                type="number"
-                name="email"
-                id="email">
-              <br>
-              <label for="tel">телефон:<sup>*</sup></label>
+                class="questionary__field" placeholder="kuklachev@gmail.com"
+                type="number" name="email" id="email">
+              <label for="tel">телефон:*</label>
               <input class="questionary__field" placeholder="8(960)900-60-90"
                 type="number" name="tel" id="tel">
             </fieldset>
             <fieldset class="comments">
-              <legend><h3>Комментарий</h3></legend>
-              <label for="ongoings"></label>
-              <textarea rows="8" cols="30" name="text"
-                id="ongoings">расскажите обо всех повадках кота</textarea>
+              <legend>Комментарий</legend>
+              <label for="ongoings" class="visually-hidden">Повадки
+                питомца</label>
+              <textarea name="text" id="ongoings"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="additions">
-              <!--! Q проблема адекватного именования классов в филдсете. полагаю, конфликтуют связанные секции страниц формы и каталога-->
-              <legend><h3>дополнительно</h3></legend>
-              <!--! Q внезапно понял, что забыл что такое легенда и зачем здесь нужна (помимо заголовка)-->
-              <input class="additional__products" type="checkbox" id="sweetener"
+            <fieldset class="additives">
+              <legend>Дополнительно</legend>
+              <input class="additives__range" type="checkbox" id="sweetener"
                 checked><label for="sweetener">сахарозаменитель</label>
               <br>
-              <input class="additional__products" type="checkbox"
+              <input class="additives__range" type="checkbox"
                 id="water"><label for="water">питьевая вода</label>
               <br>
-              <input class="additional__products" type="checkbox"
+              <input class="additives__range" type="checkbox"
                 id="milk"><label for="milk">молоко</label>
               <br>
-              <input class="additional__products" type="checkbox"
+              <input class="additives__range" type="checkbox"
                 id="vitamins"><label for="vitamins">витамины</label>
               <br>
               <a class="button" href="#">отправить заявку</a>
-              <p><small><sup>*</sup> - Обязательные поля</small></p>
+              <p><small>* - Обязательные поля</small></p>
             </fieldset>
           </form>
         </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Свяжитесь с нами</h2>
-        <b class="contatts__title">приглашаем <br>к сотрудничеству
-          <br>дилеров!</b>
-        <p class="contacts__text">ул. Большая <br>Конюшенная, д. 19/8
+        <b class="contacts__invitation">Приглашаем к&nbsp;сотрудничеству
+          дилеров!</b>
+        <p class="contacts__address">ул. Большая Конюшенная,&nbsp;д. 19/8
           Санкт-Петербург</p>
-        <img src="img/location-map.svg" alt="карта района города." width="320"
+        <img src="img/location.png" alt="карта района города."
+          width="320"
           height="362">
       </section>
     </main>
     <!--FOOTER-->
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="#">
-          <img src="img/footer-logo.svg"
-            width="128" height="20"
-            alt="#">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="logo logo--name" href="index.html">
+          <img src="img/logo-name.svg"
+            width="128" height="24"
+            alt="Кэт энерджи.">
         </a>
-        <div class="main-footer__social social">
+        <section class="footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte"
-                href="https://vk.com/htmlacademy">Мы во
-                Вконтакте</a>
+                href="https://vk.com/htmlacademy">
+                <!--здесь будет свг-->
+              </a>
+              <span class="visually-hidden">мы во VKontakte</span>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube"
-                href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+                href="https://www.youtube.com/user/htmlacademyru">
+                <!--здесь будет свг-->
+              </a>
+              <span class="visually-hidden">мы на Ютубе</span>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram"
-                href="https://t.me/htmlacademy">Мы в Телеграме</a>
+                href="https://t.me/htmlacademy">
+                <!--здесь будет свг-->
+              </a>
+              <span class="visually-hidden">мы в Телеграме</span>
             </li>
           </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
+        </section>
+        <span class="footer__copyright copyright">
           <a class="copyright__link"
-            href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+            href="https://htmlacademy.ru/intensive/adaptive">HTML
+            Academy</a>
+        </span>
       </div>
     </footer>
   </body>
