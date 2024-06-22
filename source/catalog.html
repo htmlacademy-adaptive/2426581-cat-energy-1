@@ -19,39 +19,43 @@
           alt="Кэт энерджи.">
       </a>
       <!--НАВИГАЦИЯ-->
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="list__item">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list menu-list">
+          <li class="menu-list__item">
             <a href="index.html">главная</a>
           </li>
-          <li class="list__item list__item--current">
+          <li class="menu-list__item menu-list__item--current">
             <a href="#">каталог продукции</a>
           </li>
-          <li class="list__item"><a href="form.html">подбор программы
+          <li class="menu-list__item">
+            <a href="form.html">подбор программы
             </a>
           </li>
         </ul>
       </nav>
     </header>
     <!--MAIN-->
-    <main class="main-container main__catalog">
+    <main class="main-container main-container--catalog">
       <section class="catalog">
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="product__list">
           <li class="product__item">
             <div class="product-card">
-              <!--! Q возможно, изображение является ссылкой?-->
               <img class="product-card__img" src="img/catalog-1.svg"
                 alt="Cat Energy Pro 500 г.">
-              <div class="product-card__info">
-                <span class="product__name">Cat Energy Pro 500 г.</span>
-                <br>
-                <span class="product__mass">Масса 500 г</span>
-                <br>
-                <span class="product__taste">Вкус Курица</span>
-                <br>
-                <span class="product__price">Цена 700 р</span>
-              </div>
+              <h3 class="product-card__name" tabindex="-1">Cat Energy Pro 500
+                г.</h3>
+              <dl class="product-card__info">
+                <dt class="product__mass">Масса</dt>
+                <dd> 500 г</dd>
+                <dt class="product__taste">Вкус</dt>
+                <dd>Курица</dd>
+                <dt class="product__price">Цена</dt>
+                <dd>700 ₽</dd>
+              </dl>
               <button class="product-card__button button"
                 type="button">заказать</button>
             </div>
@@ -60,15 +64,16 @@
             <div class="product-card">
               <img class="product-card__img" src="img/catalog-2.svg"
                 alt="Cat Energy Pro 1000 г.">
-              <div class="product-card__info">
-                <span class="product__name">Cat Energy Pro 1000 г.</span>
-                <br>
-                <span class="product__mass">Масса 1000 г</span>
-                <br>
-                <span class="product__taste">Вкус Курица</span>
-                <br>
-                <span class="product__price">Цена 1000 р</span>
-              </div>
+              <h3 class="product-card__name" tabindex="-1">Cat Energy Pro 1000
+                г.</h3>
+              <dl class="product-card__info">
+                <dt class="product__mass">Масса</dt>
+                <dd>1000 г</dd>
+                <dt class="product__taste">Вкус</dt>
+                <dd>Курица</dd>
+                <dt class="product__price">Цена</dt>
+                <dd>1000 ₽</dd>
+              </dl>
               <button class="product-card__button button"
                 type="button">заказать</button>
             </div>
@@ -172,7 +177,8 @@
             <div class="additional-products__info">
               <span class="additional-products__name">сахарозаменитель</span>
               <br>
-              <span class="additional-products__description">1 упаковка (100 г)
+              <span class="additional-products__description">1 упаковка (100
+                г)
                 200 ₽</span>
             </div>
             <button class="additional-products__button button"

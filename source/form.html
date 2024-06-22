@@ -19,58 +19,52 @@
           alt="Кэт энерджи.">
       </a>
       <!--НАВИГАЦИЯ-->
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="list__item">
-            <a href="index.html">главная</a>
+        <ul class="navigation__list menu-list">
+          <li class="menu-list__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="list__item">
-            <a href="catalog.html">каталог продукции</a>
+          <li class="menu-list__item">
+            <a href="#">Каталог продукции</a>
           </li>
-          <li class="list__item list__item--current">
-            <a href="#">подбор программы</a>
+          <li class="menu-list__item menu-list__item--current">
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <!--MAIN-->
-    <main class="main-container main__form">
-      <!--! Q не уверен в правильности именования класса секции-->
+    <main class="main-container main-container--form">
       <section class="questionary">
         <div class="questionary__wrapper">
           <h2 class="questionary__title">Подбор программы</h2>
           <p class="questionary__text">
-            <!--! Q не уверен в правильности именования класса-->
             Заполните анкету, и мы подберем
-            <br>программу питания для вашего кота
+            программу&nbsp;питания для вашего кота
           </p>
           <form
-            class="questionary__form"
-            action="https://echo.html.ru"
-            method="post"> <!--!название класса для form - масло масляное-->
+            class="questionary__form form"
+            action="https://echo.html.ru">
             <fieldset class="cat-details">
-              <legend class="visually-hidden"><h3>Персональные данные
-                  кота</h3></legend>
-              <label for="questionary__name">Имя<sup>*</sup></label>
+              <legend class="visually-hidden">Персональные данные
+                кота</legend>
+              <label for="questionary__name">Имя*</label>
               <input
                 class="questionary__field"
                 placeholder="Барсик"
                 type="text"
                 name="questionary__name"
                 id="questionary__name">
-              <br>
-              <label for="questionary__weight">Вес (кг):<sup>*</sup>
-              </label>
+              <label for="questionary__weight">Вес (кг):*</label>
               <input
                 class="questionary__field"
                 placeholder="7"
                 type="number"
                 name="questionary__weight"
                 id="questionary__weight">
-              <br>
               <label for="questionary__age">Возраст (лет):</label>
               <input
                 class="questionary__field"
@@ -80,64 +74,55 @@
                 id="questionary__age">
             </fieldset>
             <fieldset class="chosen-program">
-              <legend class="visually-hidden"><h3>Выбор
-                  программы</h3></legend><!--! Q трудности с правильным подбором названия программ на английском - gain, loose, slim, pro -->
-              <label><input class="loosing-weight" type="radio"
+              <legend class="visually-hidden">Выбор программы</legend>
+              <label>
+                <input class="loosing-weight" type="radio"
                   name="loosing-weight" value="slim"
-                  checked>похудение</label>
-              <br>
-              <label><input class="gaining-weight" type="radio"
+                  checked>Похудение
+              </label>
+              <label>
+                <input class="gaining-weight" type="radio"
                   name="gaining-weight"
-                  value="pro">набор
-                массы</label>
-              <br>
-              <label><input class="#" type="radio" name="program#"
-                  value="advise#">не
-                знаю (нужен ваш
-                совет)</label>
-              <!--! Q затрудняюсь адекватно поименовать value-->
+                  value="pro">Набор массы
+              </label>
+              <label>
+                <input class="advise" type="radio" name="advise"
+                  value="advise">Не знаю (нужен ваш совет)
+              </label>
             </fieldset>
             <fieldset class="owner-details">
-              <legend><h3>Контактные данные
-                  (владельца кота)</h3></legend>
-              <label for="email">e-mail:<sup>*</sup>
-              </label>
+              <legend>Контактные данные (владельца кота)</legend>
+              <label for="email">e-mail:*</label>
               <input
-                class="questionary__field"
-                placeholder="kuklachev@gmail.com"
-                type="number"
-                name="email"
-                id="email">
-              <br>
-              <label for="tel">телефон:<sup>*</sup></label>
+                class="questionary__field" placeholder="kuklachev@gmail.com"
+                type="number" name="email" id="email">
+              <label for="tel">телефон:*</label>
               <input class="questionary__field" placeholder="8(960)900-60-90"
                 type="number" name="tel" id="tel">
             </fieldset>
             <fieldset class="comments">
               <legend>Комментарий</legend>
-              <label for="ongoings"></label>
-              <textarea name="text"
-                id="ongoings"
+              <label for="ongoings" class="visually-hidden">Повадки
+                питомца</label>
+              <textarea name="text" id="ongoings"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="additions">
-              <!--! Q проблема адекватного именования классов в филдсете. полагаю, конфликтуют связанные секции страниц формы и каталога-->
-              <legend><h3>дополнительно</h3></legend>
-              <!--! Q внезапно понял, что забыл что такое легенда и зачем здесь нужна (помимо заголовка)-->
-              <input class="additional__products" type="checkbox" id="sweetener"
+            <fieldset class="additives">
+              <legend>Дополнительно</legend>
+              <input class="additives__range" type="checkbox" id="sweetener"
                 checked><label for="sweetener">сахарозаменитель</label>
               <br>
-              <input class="additional__products" type="checkbox"
+              <input class="additives__range" type="checkbox"
                 id="water"><label for="water">питьевая вода</label>
               <br>
-              <input class="additional__products" type="checkbox"
+              <input class="additives__range" type="checkbox"
                 id="milk"><label for="milk">молоко</label>
               <br>
-              <input class="additional__products" type="checkbox"
+              <input class="additives__range" type="checkbox"
                 id="vitamins"><label for="vitamins">витамины</label>
               <br>
               <a class="button" href="#">отправить заявку</a>
-              <p><small><sup>*</sup> - Обязательные поля</small></p>
+              <p><small>* - Обязательные поля</small></p>
             </fieldset>
           </form>
         </div>
