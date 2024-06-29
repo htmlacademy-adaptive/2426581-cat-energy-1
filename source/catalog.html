@@ -45,126 +45,117 @@
         <div class="catalog-wrapper container">
           <h1 class="catalog__title">Каталог продукции</h1>
           <ul class="catalog__list">
-            <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-1.svg"
-                  alt="Cat Energy Pro 500 г.">
-                <h2 class="product-card__name" tabindex="-1">Cat Energy Pro 500
-                  г.</h2>
-                <dl class="product-card__info">
-                  <dt class="product__mass">Масса</dt>
-                  <dd> 500 г</dd>
-                  <dt class="product__taste">Вкус</dt>
-                  <dd>Курица</dd>
-                  <dt class="product__price">Цена</dt>
-                  <dd>700 ₽</dd>
-                </dl>
-                <button class="product-card__button button"
-                  type="button">Заказать</button>
-              </div>
+            <li class="catalog__item product">
+              <a class="product__link" href="#">
+                <img class="product__img" src="img/catalog-1.svg"
+                  tabindex="-1" alt="Cat Energy Pro 500 г">
+                <!-- Если можно не ставить в некоторых случаях точку в alt - не возражаю нисколько-->
+              </a>
+              <h2 class="product__name">
+                <a href="#">Cat Energy Pro 500&nbsp;г</a>
+              </h2>
+              <dl class="product__info">
+                <dt class="product__spec">Масса</dt>
+                <dd class="product__essence">500&nbsp;г</dd>
+                <!--пока - такой класс для dd-->
+                <dt class="product__spec">Вкус</dt>
+                <dd class="product__essence">Курица</dd>
+                <dt class="product__spec">Цена</dt>
+                <dd class="product__essence">700&nbsp;₽</dd>
+              </dl>
+              <button class="product__button button"
+                type="button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-2.svg"
-                  alt="Cat Energy Pro 1000 г.">
-                <h2 class="product-card__name" tabindex="-1">Cat Energy Pro 1000
-                  г.</h2>
-                <dl class="product-card__info">
-                  <dt class="product__mass">Масса</dt>
-                  <dd>1000 г</dd>
-                  <dt class="product__taste">Вкус</dt>
-                  <dd>Курица</dd>
-                  <dt class="product__price">Цена</dt>
-                  <dd>1000 ₽</dd>
-                </dl>
-                <button class="product-card__button button"
-                  type="button">Заказать</button>
-              </div>
+              <img class="product-card__img" src="img/catalog-2.svg"
+                alt="Cat Energy Pro 1000 г.">
+              <h2 class="product-card__name" tabindex="-1">Cat Energy Pro 1000
+                г.</h2>
+              <dl class="product-card__info">
+                <dt class="product__mass">Масса</dt>
+                <dd>1000 г</dd>
+                <dt class="product__taste">Вкус</dt>
+                <dd>Курица</dd>
+                <dt class="product__price">Цена</dt>
+                <dd>1000 ₽</dd>
+              </dl>
+              <button class="product-card__button button"
+                type="button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-3.svg"
-                  alt="Cat Energy Pro 500 г.">
-                <div class="product-card__info">
-                  <span class="product__name">Cat Energy Pro 500 г.</span>
-                  <br>
-                  <span class="product__mass">Масса 500 г</span>
-                  <br>
-                  <span class="product__taste">Вкус Рыба</span>
-                  <br>
-                  <span class="product__price">Цена 700 р</span>
-                </div>
-                <button class="product-card__button button"
-                  type="button">Заказать</button>
+              <img class="product-card__img" src="img/catalog-3.svg"
+                alt="Cat Energy Pro 500 г.">
+              <div class="product-card__info">
+                <span class="product__name">Cat Energy Pro 500 г.</span>
+                <br>
+                <span class="product__mass">Масса 500 г</span>
+                <br>
+                <span class="product__taste">Вкус Рыба</span>
+                <br>
+                <span class="product__price">Цена 700 р</span>
               </div>
+              <button class="product-card__button button"
+                type="button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-4.svg"
-                  alt="Cat Energy Pro 1000 г.">
-                <div class="product-card__info">
-                  <span class="product__name">Cat Energy Pro 1000 г.</span>
-                  <br>
-                  <span class="product__mass">Масса 1000 г</span>
-                  <br>
-                  <span class="product__taste">Вкус Рыба</span>
-                  <br>
-                  <span class="product__price">Цена 1000 р</span>
-                </div>
-                <button class="product-card__button button"
-                  type="button">Заказать</button>
+              <img class="product-card__img" src="img/catalog-4.svg"
+                alt="Cat Energy Pro 1000 г.">
+              <div class="product-card__info">
+                <span class="product__name">Cat Energy Pro 1000 г.</span>
+                <br>
+                <span class="product__mass">Масса 1000 г</span>
+                <br>
+                <span class="product__taste">Вкус Рыба</span>
+                <br>
+                <span class="product__price">Цена 1000 р</span>
               </div>
+              <button class="product-card__button button"
+                type="button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-5.svg"
-                  alt="Cat Energy Slim 500 г.">
-                <div class="product-card__info">
-                  <span class="product__name">Cat Energy Slim 500 г.</span>
-                  <br>
-                  <span class="product__mass">Масса 500 г</span>
-                  <br>
-                  <span class="product__taste">Вкус Гречка</span>
-                  <br>
-                  <span class="product__price">Цена 400 р</span>
-                </div>
-                <button class="product-card__button button"
-                  type="button">заказать</button>
+              <img class="product-card__img" src="img/catalog-5.svg"
+                alt="Cat Energy Slim 500 г.">
+              <div class="product-card__info">
+                <span class="product__name">Cat Energy Slim 500 г.</span>
+                <br>
+                <span class="product__mass">Масса 500 г</span>
+                <br>
+                <span class="product__taste">Вкус Гречка</span>
+                <br>
+                <span class="product__price">Цена 400 р</span>
               </div>
+              <button class="product-card__button button"
+                type="button">заказать</button>
             </li>
             <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-6.svg"
-                  alt="Cat Energy Slim 1000 г.">
-                <div class="product-card__info">
-                  <span class="product__name">Cat Energy Slim 1000 г.</span>
-                  <br>
-                  <span class="product__mass">Масса 1000 г</span>
-                  <br>
-                  <span class="product__taste">Вкус Гречка</span>
-                  <br>
-                  <span class="product__price">Цена 700 р</span>
-                </div>
-                <button class="product-card__button button"
-                  type="button">Заказать</button>
+              <img class="product-card__img" src="img/catalog-6.svg"
+                alt="Cat Energy Slim 1000 г.">
+              <div class="product-card__info">
+                <span class="product__name">Cat Energy Slim 1000 г.</span>
+                <br>
+                <span class="product__mass">Масса 1000 г</span>
+                <br>
+                <span class="product__taste">Вкус Гречка</span>
+                <br>
+                <span class="product__price">Цена 700 р</span>
               </div>
+              <button class="product-card__button button"
+                type="button">Заказать</button>
             </li>
             <li class="catalog__item">
-              <div class="product-card">
-                <img class="product-card__img" src="img/catalog-7.svg"
-                  alt="Cat Energy Slim 500 г.">
-                <div class="product-card__info">
-                  <span class="product__name">Cat Energy Slim 500 г.</span>
-                  <br>
-                  <span class="product__mass">Масса 500 г</span>
-                  <br>
-                  <span class="product__taste">Вкус Рис</span>
-                  <br>
-                  <span class="product__price">Цена 500 р</span>
-                </div>
-                <button class="product-card__button button"
-                  type="button">Заказать</button>
+              <img class="product-card__img" src="img/catalog-7.svg"
+                alt="Cat Energy Slim 500 г.">
+              <div class="product-card__info">
+                <span class="product__name">Cat Energy Slim 500 г.</span>
+                <br>
+                <span class="product__mass">Масса 500 г</span>
+                <br>
+                <span class="product__taste">Вкус Рис</span>
+                <br>
+                <span class="product__price">Цена 500 р</span>
               </div>
+              <button class="product-card__button button"
+                type="button">Заказать</button>
             </li>
           </ul>
           <!--!кнопка показать все товары-->
