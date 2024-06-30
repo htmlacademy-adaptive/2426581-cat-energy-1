@@ -170,6 +170,7 @@
               <button class="product__button button"
                 type="button">Заказать</button>
             </li>
+            <!-- ! Q модификаторы правильно прописал? парафграфы внутри так оставляем (классы к ним - позже)-->
             <li class="catalog__item product product--more">
               <p>показать еще 100500 товаров</p>
               <p>На самом деле вкусов гораздо больше</p>
@@ -178,58 +179,59 @@
                 все</a>
             </li>
           </ul>
-          <!--!кнопка показать все товары-->
-
         </div>
       </section>
-      <section class="additional-products">
-        <h2>Дополнительные товары</h2>
-        <ul class="additional-products__list">
-          <li class="additional-products__item">
-            <div class="additional-products__info">
-              <span
-                class="additional-products__name">Сахарозаменитель</span>
-              <br>
-              <span class="additional-products__description">1 упаковка
-                (100&nbsp;г)
-                200&nbsp;₽</span>
-            </div>
-            <button class="additional-products__button button"
-              type="button">Заказать</button>
-          </li>
-          <li class="additional-products__item">
-            <div class="additional-products__info">
-              <span class="additional-products__name">Питьевая вода</span>
-              <br>
-              <span class="additional-products__description">5&nbsp;литров
-                50&nbsp;₽</span>
-            </div>
-            <button class="additional-products__button button"
-              type="button">Заказать</button>
-          </li>
-          <li class="additional-products__item">
-            <div class="additional-products__info">
-              <span class="additional-products__name">Молоко</span>
-              <br>
-              <span class="additional-products__description">1&nbsp;литр
-                100&nbsp;₽</span>
-            </div>
-            <button class="additional-products__button button"
-              type="button">Заказать</button>
-          </li>
-          <li class="additional-products__item">
-            <div class="additional-products__info">
-              <span class="additional-products__name">Витамины</span>
-              <br>
-              <span
-                class="additional-products__description">1&nbsp;упаковка
-                (30&nbsp;г)
-                300 ₽</span>
-            </div>
-            <button class="additional-products__button button"
-              type="button">Заказать</button>
-          </li>
-        </ul>
+      <!--Дополнительные товары-->
+      <section class="extras">
+        <div class="extras__wrapper container">
+          <h2 class="extras__title">Дополнительные товары</h2>
+          <ul class="extras__list">
+            <li class="extras__item">
+              <h3 class="extras__name">Сахарозаменитель</h3>
+              <dl class="extras__info">
+                <dt class="extras__volume visually-hidden">Объем</dt>
+                <dd class="extras__quantity">1 упаковка (100&nbsp;г)</dd>
+                <dt class="extras__price visually-hidden">Цена</dt>
+                <dd class="extras__amount">200&nbsp;₽</dd>
+              </dl>
+              <button class="extras__button button"
+                type="button">Заказать</button>
+            </li>
+            <li class="extras__item">
+              <h3 class="extras__name">Питьевая вода</h3>
+              <dl class="extras__info">
+                <dt class="extras__volume visually-hidden">Объем</dt>
+                <dd class="extras__quantity">5&nbsp;литров</dd>
+                <dt class="extras__price visually-hidden">Цена</dt>
+                <dd class="extras__amount">50&nbsp;₽</dd>
+              </dl>
+              <button class="extras__button button"
+                type="button">Заказать</button>
+            </li>
+            <li class="extras__item">
+              <h3 class="extras__name">Молоко</h3>
+              <dl class="extras__info">
+                <dt class="extras__volume visually-hidden">Объем</dt>
+                <dd class="extras__quantity">1&nbsp;литр</dd>
+                <dt class="extras__price visually-hidden">Цена</dt>
+                <dd class="extras__amount">100&nbsp;₽</dd>
+              </dl>
+              <button class="extras__button button"
+                type="button">Заказать</button>
+            </li>
+            <li class="extras__item">
+              <h3 class="extras__name">Витамины</h3>
+              <dl class="extras__info">
+                <dt class="extras__volume visually-hidden">Объем</dt>
+                <dd class="extras__quantity">1&nbsp;упаковка (30&nbsp;г)</dd>
+                <dt class="extras__price visually-hidden">Цена</dt>
+                <dd class="extras__amount">300&nbsp;₽</dd>
+              </dl>
+              <button class="extras__button button"
+                type="button">Заказать</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <div class="gift">
         <span class="gift__condition">Закажите все и получите чехол для
