@@ -44,55 +44,41 @@
         <div class="questionary__wrapper">
           <h1 class="questionary__title">Подбор программы</h1>
           <p class="questionary__text">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <form
-            class="questionary__form form"
-            action="https://echo.html.ru">
-            <fieldset class="cat-details">
-              <legend class="visually-hidden">Персональные данные
-                кота</legend>
-              <label for="questionary__name">Имя*</label>
-              <input
-                class="questionary__field"
-                placeholder="Барсик"
-                type="text"
-                name="questionary__name"
-                id="questionary__name">
-              <label for="questionary__weight">Вес (кг):*</label>
-              <input
-                class="questionary__field"
-                placeholder="7"
-                type="number"
-                name="questionary__weight"
-                id="questionary__weight">
-              <label for="questionary__age">Возраст (лет):</label>
-              <input
-                class="questionary__field"
-                placeholder="7"
-                type="number"
-                name="questionary__age"
-                id="questionary__age">
+          <form class="questionary__form form" action="https://echo.html.ru">
+            <!--! разобраться с этой ссылкой -->
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Персональные данные кота</legend>
+              <label class="form__name" for="form__name">Имя*</label>
+              <input class="form__field" placeholder="Барсик" type="text"
+                name="form__name" id="form__name">
+              <label for="form__weight">Вес (кг):*</label>
+              <input class="form____field" placeholder="7" type="number"
+                name="form__weight" id="form__weight">
+              <label for="form__age">Возраст (лет):</label>
+              <input class="form__field" placeholder="7" type="number"
+                name="form__age" id="form__age">
             </fieldset>
-            <fieldset class="chosen-program">
+            <fieldset class="form__fieldset">
               <legend class="visually-hidden">Выбор программы</legend>
               <label>
-                <input class="loosing-weight" type="radio"
-                  name="loosing-weight" value="slim"
+                <input class="form__field form__field--radio" type="radio"
+                  name="weight-changes" value="slim"
                   checked>Похудение
               </label>
               <label>
-                <input class="gaining-weight" type="radio"
-                  name="gaining-weight"
+                <input class="form__field form__field--radio" type="radio"
+                  name="weight-changes"
                   value="pro">Набор массы
               </label>
               <label>
-                <input class="advise" type="radio" name="advise"
+                <input class="form__field form__field--radio" type="radio"
+                  name="weight-changes"
                   value="advise">Не знаю (нужен ваш совет)
               </label>
             </fieldset>
-            <fieldset class="owner-details">
+            <fieldset class="form__fieldset">
               <legend>Контактные данные (владельца кота)</legend>
               <label for="email">E-mail:*</label>
               <input
@@ -102,14 +88,14 @@
               <input class="questionary__field" placeholder="8(960)900-60-90"
                 type="number" name="tel" id="tel">
             </fieldset>
-            <fieldset class="comments">
+            <fieldset class="form__fieldset">
               <legend>Комментарий</legend>
               <label for="ongoings" class="visually-hidden">Повадки
                 питомца</label>
               <textarea name="text" id="ongoings"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="additives">
+            <fieldset class="form__fieldset">
               <!--! Q могу ли я оформить additives как список с инпутами внутри? <br> пока оставлю-->
               <legend>Дополнительно</legend>
               <input class="additives__range" type="checkbox" id="sweetener"
