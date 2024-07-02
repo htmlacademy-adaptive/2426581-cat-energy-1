@@ -50,42 +50,66 @@
             <!--! разобраться с этой ссылкой -->
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Персональные данные кота</legend>
-              <label class="form__name" for="form__name">Имя*</label>
-              <input class="form__field" placeholder="Барсик" type="text"
-                name="form__name" id="form__name">
-              <label for="form__weight">Вес (кг):*</label>
-              <input class="form____field" placeholder="7" type="number"
-                name="form__weight" id="form__weight">
-              <label for="form__age">Возраст (лет):</label>
-              <input class="form__field" placeholder="7" type="number"
-                name="form__age" id="form__age">
+              <ul class="form__list">
+                <li class="form__item">
+                  <!--пока такие базовые классы для списков-->
+                  <label class="form__name" for="form__name">Имя*</label>
+                  <input class="form__field" placeholder="Барсик" type="text"
+                    name="form__name" id="form__name">
+                </li>
+                <li class="form__item">
+                  <label for="form__weight">Вес (кг):*</label>
+                  <input class="form____field" placeholder="7" type="number"
+                    name="form__weight" id="form__weight">
+                </li>
+                <li class="form__item">
+                  <label for="form__age">Возраст (лет):</label>
+                  <input class="form__field" placeholder="7" type="number"
+                    name="form__age" id="form__age">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Выбор программы</legend>
-              <label class="weight-changes weight-changes--slim">
-                <input class="form__field form__field--radio" type="radio"
-                  name="weight-changes" value="slim" checked>Похудение
-              </label>
-              <label class="weight-changes weight-changes--pro">
-                <input class="form__field form__field--radio" type="radio"
-                  name="weight-changes" value="pro">Набор массы
-              </label>
-              <label class="weight-changes weight-changes--advise">
-                <input class=" form__field form__field--radio" type="radio"
-                  name="weight-changes" value="advise">Не знаю (нужен ваш совет)
-              </label>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="weight-changes weight-changes--slim">
+                    <input class="form__field form__field--radio" type="radio"
+                      name="weight-changes" value="slim" checked>Похудение
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="weight-changes weight-changes--pro">
+                    <input class="form__field form__field--radio" type="radio"
+                      name="weight-changes" value="pro">Набор массы
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="weight-changes weight-changes--advise">
+                    <input class=" form__field form__field--radio" type="radio"
+                      name="weight-changes" value="advise">Не знаю (нужен ваш
+                    совет)
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__data">Контактные данные (владельца
                 кота)</legend>
-              <label class="form__text form__text--email"
-                for="email">E-mail:*</label>
-              <input class="form__field" placeholder="kuklachev@gmail.com"
-                type="number" name="email" id="email">
-              <label class="form__text form__text--tel"
-                for="tel">Телефон:*</label>
-              <input class="form__field" placeholder="8(960)900-60-90"
-                type="number" name="tel" id="tel">
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__text form__text--email"
+                    for="email">E-mail:*</label>
+                  <input class="form__field" placeholder="kuklachev@gmail.com"
+                    type="number" name="email" id="email">
+                </li>
+                <li class="form__item">
+                  <label class="form__text form__text--tel"
+                    for="tel">Телефон:*</label>
+                  <input class="form__field" placeholder="8(960)900-60-90"
+                    type="number" name="tel" id="tel">
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__comments">Комментарий</legend>
@@ -96,19 +120,29 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__extras">Дополнительно</legend>
-              <input class="form__range" type="checkbox" id="sweetener"
-                checked>
-              <label for="sweetener">Сахарозаменитель</label>
-              <!--тут пока не понимаю что с классами для лейблов сделать, чтобы не было конфликта с секциями Доп товаров в Каталоге-->
-              <input class="form__range" type="checkbox"
-                id="water">
-              <label for="water">Питьевая вода</label>
-              <input class="form__range" type="checkbox"
-                id="milk">
-              <label for="milk">Молоко</label>
-              <input class="form__range" type="checkbox"
-                id="vitamins">
-              <label for="vitamins">Витамины</label>
+              <ul class="form__list">
+                <li class="form__item">
+                  <input class="form__range" type="checkbox" id="sweetener"
+                    checked>
+                  <label for="sweetener">Сахарозаменитель</label>
+                  <!--тут пока не понимаю что с классами для лейблов сделать, чтобы не было конфликта с секциями Доп товаров в Каталоге-->
+                </li>
+                <li class="form__item">
+                  <input class="form__range" type="checkbox"
+                    id="water">
+                  <label for="water">Питьевая вода</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__range" type="checkbox"
+                    id="milk">
+                  <label for="milk">Молоко</label>
+                </li>
+                <li class="form__item">
+                  <input class="form__range" type="checkbox"
+                    id="vitamins">
+                  <label for="vitamins">Витамины</label>
+                </li>
+              </ul>
               <a class="button" href="#">Отправить заявку</a>
               <p>* - Обязательные поля</p>
             </fieldset>
