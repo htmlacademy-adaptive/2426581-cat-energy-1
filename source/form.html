@@ -62,56 +62,55 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Выбор программы</legend>
-              <label>
+              <label class="weight-changes weight-changes--slim">
                 <input class="form__field form__field--radio" type="radio"
-                  name="weight-changes" value="slim"
-                  checked>Похудение
+                  name="weight-changes" value="slim" checked>Похудение
               </label>
-              <label>
+              <label class="weight-changes weight-changes--pro">
                 <input class="form__field form__field--radio" type="radio"
-                  name="weight-changes"
-                  value="pro">Набор массы
+                  name="weight-changes" value="pro">Набор массы
               </label>
-              <label>
-                <input class="form__field form__field--radio" type="radio"
-                  name="weight-changes"
-                  value="advise">Не знаю (нужен ваш совет)
+              <label class="weight-changes weight-changes--advise">
+                <input class=" form__field form__field--radio" type="radio"
+                  name="weight-changes" value="advise">Не знаю (нужен ваш совет)
               </label>
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend>Контактные данные (владельца кота)</legend>
-              <label for="email">E-mail:*</label>
-              <input
-                class="questionary__field" placeholder="kuklachev@gmail.com"
+              <legend class="form__data">Контактные данные (владельца
+                кота)</legend>
+              <label class="form__text form__text--email"
+                for="email">E-mail:*</label>
+              <input class="form__field" placeholder="kuklachev@gmail.com"
                 type="number" name="email" id="email">
-              <label for="tel">Tелефон:*</label>
-              <input class="questionary__field" placeholder="8(960)900-60-90"
+              <label class="form__text form__text--tel"
+                for="tel">Телефон:*</label>
+              <input class="form__field" placeholder="8(960)900-60-90"
                 type="number" name="tel" id="tel">
             </fieldset>
             <fieldset class="form__fieldset">
-              <legend>Комментарий</legend>
-              <label for="ongoings" class="visually-hidden">Повадки
+              <legend class="form__comments">Комментарий</legend>
+              <label class="visually-hidden" for="ongoings">Повадки
                 питомца</label>
-              <textarea name="text" id="ongoings"
+              <textarea name="message" id="ongoings"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__fieldset">
-              <!--! Q могу ли я оформить additives как список с инпутами внутри? <br> пока оставлю-->
-              <legend>Дополнительно</legend>
-              <input class="additives__range" type="checkbox" id="sweetener"
-                checked><label for="sweetener">Сахарозаменитель</label>
-              <br>
-              <input class="additives__range" type="checkbox"
-                id="water"><label for="water">Питьевая вода</label>
-              <br>
-              <input class="additives__range" type="checkbox"
-                id="milk"><label for="milk">Молоко</label>
-              <br>
-              <input class="additives__range" type="checkbox"
-                id="vitamins"><label for="vitamins">Витамины</label>
-              <br>
+              <legend class="form__extras">Дополнительно</legend>
+              <input class="form__range" type="checkbox" id="sweetener"
+                checked>
+              <label for="sweetener">Сахарозаменитель</label>
+              <!--тут пока не понимаю что с классами для лейблов сделать, чтобы не было конфликта с секциями Доп товаров в Каталоге-->
+              <input class="form__range" type="checkbox"
+                id="water">
+              <label for="water">Питьевая вода</label>
+              <input class="form__range" type="checkbox"
+                id="milk">
+              <label for="milk">Молоко</label>
+              <input class="form__range" type="checkbox"
+                id="vitamins">
+              <label for="vitamins">Витамины</label>
               <a class="button" href="#">Отправить заявку</a>
-              <p><small>* - Обязательные поля</small></p>
+              <p>* - Обязательные поля</p>
             </fieldset>
           </form>
         </div>
@@ -122,8 +121,7 @@
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
           Санкт-Петербург</p>
         <img src="img/location.png" alt="карта района города."
-          width="320"
-          height="362">
+          width="320" height="362">
       </section>
     </main>
     <!--FOOTER-->
