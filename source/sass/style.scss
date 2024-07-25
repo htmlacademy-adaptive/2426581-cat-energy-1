@@ -1,11 +1,14 @@
 // Общие стили
 @import "blocks/fonts.scss";
-@import "blocks/html.scss";
-@import "blocks/body.scss";
+@import "blocks/general-styles.scss";
 // Шапка
 @import "blocks/header.scss";
-@import "blocks/nav-menu.scss"
+@import "blocks/nav-menu.scss";
 // Главная
+@import "blocks/index/hero.scss";
+@import "blocks/index/program.scss";
+@import "blocks/index/usage.scss";
+@import "blocks/index/example.scss";
 // Каталог
 // Форма
 // Подвал
