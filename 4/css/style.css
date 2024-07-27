@@ -1,0 +1,50 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato";
+  font-style: normal; /*какой фонт стайл указать корректно? нужен ли фонт-вейт?*/
+  src: url("/source/fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/source/fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100%;
+  font-family: "Lato", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  background-color: #68B738;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation .navigation-list {
+  list-style-type: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: #68B738;
+  margin: 0;
+}
+p {
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=style.css.map */
