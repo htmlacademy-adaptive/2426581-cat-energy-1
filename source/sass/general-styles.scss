@@ -5,6 +5,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  //align-items: center;
   width: 320px;
   height: 100%;
   font-family: "Lato", "Oswald", sans-serif;
@@ -13,11 +14,12 @@ body {
   color: #444444;
   background-color: #ffffff;
   margin: 0;
-  padding: 0; //! Q нужны ли отступы именно в бади?
+  //padding: 0; //! Q нужны ли отступы именно в бади?
 }
 
 ul {
 list-style-type: none;
+padding: 0; // обнуляю, чтобы не мешали
 }
 
 a {
@@ -38,6 +40,7 @@ h2 {
   font-size: 24px;
   line-height: 37px;
   color: #000000;
+  margin: 0 auto;
 }
 
 //.visually-hidden { } еще не придумал, что делать с этим классом
