@@ -1,3 +1,39 @@
 .example {
   background-color: #eaeaea;
+  padding: 0 20px;
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0 auto 20px;
+}
+
+.example__report {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example__report__item {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.example__report__item--small { //явно не так
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.example__report__amount {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__report__amount:last-child {
+  margin-bottom: 20px;
 }
