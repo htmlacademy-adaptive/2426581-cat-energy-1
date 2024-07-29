@@ -40,6 +40,19 @@ h2 {
   color: #000000;
 }
 
-//.visually-hidden { } что делать с этим классом?
+//.visually-hidden { } еще не придумал, что делать с этим классом
+
+.button {
+  width: 280px;
+  height: 40px;
+    background-color: #68b738;
+    border: none;
+    color: #ffffff;
+    padding: 10px 10px; // паддинги ширины слишком велики пока что
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 
 
