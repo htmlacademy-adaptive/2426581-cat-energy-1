@@ -2,17 +2,32 @@
   display: flex;
   flex-direction: column;
 width: 320px;
-background-color: #68b738;
-opacity: 85%;
+min-height: 480px;
+z-index: 1;
 margin: 0;
+}
+
+.hero__content {
+  height: min-content;
+  background-image: url("/source/img/index-background-cat.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  z-index: 3;
+  opacity: 85%;
+
     .hero__title {
 color: #ffffff;
-letter-spacing: 0%;
+text-align: center;
 margin: 0 auto;
-padding: 27px 16px 25px;
+padding: 27px 36px 25px;
 }
 
     .hero__slogan {
+      font-size: 14px;
       color: #ffffff;
+      text-align: center;
+      margin: 0 auto;
+padding: 0 62px 164px;
     }
 }
