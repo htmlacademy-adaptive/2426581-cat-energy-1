@@ -13,7 +13,8 @@
 
 .example__report {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  //пока что оставлю список таковым
 }
 
 .example__report__item {
@@ -22,7 +23,7 @@
   line-height: 100%;
 }
 
-.example__report__item--small { //явно не так
+.example__report__item--small {
   font-family: "Oswald";
   font-size: 14px;
   line-height: 20px;
