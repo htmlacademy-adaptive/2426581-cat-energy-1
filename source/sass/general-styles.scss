@@ -43,6 +43,11 @@ h2 {
   margin: 0 auto;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 //.visually-hidden { } еще не придумал, что делать с этим классом
 
 .button {
@@ -51,7 +56,7 @@ h2 {
     background-color: #68b738;
     border: none;
     color: #ffffff;
-    padding: 10px 10px; // паддинги ширины слишком велики пока что
+    padding: 10px 10px; // padding-left/right пока под вопросом
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -63,6 +68,8 @@ p {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  padding: 0;
 }
 
 

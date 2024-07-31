@@ -1,9 +1,11 @@
 // Общие стили
 @import "fonts.scss";
 @import "general-styles.scss";
-@import "common-styles.scss";
+@import "common-styles.scss"; // пока не знаю зачем
 // Лого
 @import "blocks/logo.scss";
+// Контакты
+@import "blocks/contacts.scss";
 // Шапка
 @import "blocks/header/header.scss";
 @import "blocks/header/nav-menu.scss";
