@@ -7,18 +7,25 @@
   </head>
   <body class="page__body">
     <header class="header header--catalog">
-      <!--ЛОГО-->
-      <a class="logo logo--icon" href="index.html">
-        <img
-          src="img/logo-icon.svg"
-          width="33" height="38"
-          alt="логотип магазина.">
-      </a>
-      <a class="logo logo--name" href="index.html">
-        <img src="img/logo-name.svg"
-          width="101" height="18"
-          alt="Кэт энерджи.">
-      </a>
+      <div class="header__wrapper">
+        <!--ЛОГО-->
+        <a class="logo logo--icon" href="index.html">
+          <img
+            src="img/logo-icon.svg"
+            width="33" height="38"
+            alt="логотип магазина.">
+        </a>
+        <a class="logo logo--name" href="index.html">
+          <img src="img/logo-name.svg"
+            width="101" height="18"
+            alt="Кэт энерджи.">
+        </a>
+        <span>
+          <img class="menu-button" src="img/burger-button.svg"
+            width="24"
+            height="20" alt="Кнопка меню.">
+        </span>
+      </div>
       <!--НАВИГАЦИЯ-->
       <nav class="navigation">
         <button class="navigation__toggle" type="button">
@@ -182,10 +189,12 @@
               <button class="product__button button"
                 type="button">Заказать</button>
             </li>
-            <!-- ! Q модификаторы правильно прописал? парафграфы внутри так оставляем (классы к ним - позже)-->
-            <li class="catalog__item product product--more">
-              <p>показать еще 100500 товаров</p>
-              <p>На самом деле вкусов гораздо больше</p>
+            <!-- ! Q кривые имена классов/модов,еще подумаю-->
+            <li class="catalog__item product">
+              <h2 class="product__name product__name--more">показать еще 100500
+                товаров</h2>
+              <p class="product__more">На самом деле вкусов гораздо
+                больше!</p>
               <a class="product__button product__button--more button"
                 href="#">Показать все</a>
             </li>
