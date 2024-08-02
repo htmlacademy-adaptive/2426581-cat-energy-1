@@ -1,0 +1,32 @@
+.product {
+  width: 280px;
+
+  .product__essence:last-child {
+    margin: 0 0 21px 0;
+  }
+
+  .product__name--more {
+    padding: 78px 30.5px 0;
+    margin: 0 0 8px 0;
+    }
+
+    .product__more {
+      margin: 0 0 21px 0;
+      padding: 0 10.5px;
+    }
+  }
+
+.product__name {
+      font-family: "Oswald", sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+    a {
+    color: #222222;
+    }
+}
+
+.product__button {
+  margin: 0 0 60px 0;
+}

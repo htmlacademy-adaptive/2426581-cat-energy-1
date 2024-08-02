@@ -4,43 +4,19 @@
   align-items: center;
   width: 280px;
   padding: 0 20px;
-}
 
-.catalog__title {
-  margin: 0 0 41px 0;
-}
-
-.catalog__item {
-  margin: 0 0 25px 0;
-}
-
-.product {
-  width: inherit;
-
-  .product__essence:last-child {
-    margin: 0 0 21px 0;
+  .catalog__title {
+    margin: 0 0 41px 0;
   }
 
-  .product__name--more {
-    padding: 78px 18px 0;
-    margin: 0 0 8px 0;
-    }
-
-    .product__more {
-      margin: 0 0 21px 0;
-      padding: 0 10.5px;
-    }
+  .catalog__item {
+    margin: 0 0 25px 0;
   }
+}
 
-.product__name, .extras__name {
-      font-family: "Oswald", sans-serif;
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
-    a {
-    color: #222222;
-    }
-  }
+
+
+
 
 
 
