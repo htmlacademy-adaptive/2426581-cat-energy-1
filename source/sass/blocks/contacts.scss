@@ -1,18 +1,20 @@
-.contacts__text {
+.contacts {
+width: inherit;
+  .contacts__text {
   padding: 26px 20px;
 }
 
-.contacts__invitation {
+  .contacts__invitation {
   font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
   color: #111111;
 }
 
-.contacts__address {
+  .contacts__address {
   font-family: "Lato";
   font-size: 14px;
   line-height: 20px;
   color: #444444;
 }
-
+}

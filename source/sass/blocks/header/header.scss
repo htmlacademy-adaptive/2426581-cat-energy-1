@@ -3,12 +3,16 @@
   flex-direction: column;
   justify-content: space-between;
   width: 320px;
-  .header__wrapper {
+  //margin: 0;
+  &.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //margin: 0 0 41px 0;
 padding: 13px 21px 14px 20px;
+  }
+
+  &.header--catalog {
+    margin: 0 0 27px 0;
   }
 }
 
