@@ -21,7 +21,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
-list-style-type: none;
+  list-style-type: none;
 }
 
 dl {
@@ -80,10 +80,10 @@ h3 {
   margin: 0;
 }
 
-  .button--light {
-    color: #444444;
-    background-color: #f2f2f2;
-  }
+.button--light {
+color: #444444;
+background-color: #f2f2f2;
+}
 
 
 p {
@@ -99,5 +99,5 @@ p {
 display: flex;
 flex-direction: column;
 margin: 0;
-//padding: 0 20px; // разобраться с паддингами секций и общего main контейнера
+//padding: 0 20px; // ! разобраться с паддингами секций и общего main контейнера
 }

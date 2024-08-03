@@ -1,22 +1,21 @@
 .hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
 width: 320px;
 min-height: 480px;
 margin: 0;
 
 .hero__content {
-  height: min-content; // нужна ли здесь высота?
-  background-color:  #68b738;
+height: min-content; // нужна ли здесь высота?
+background-color:  #68b738;
   // ! Q с наложением фона на изображение еще не разобрался
                          //linear-gradient(rgba(104,183,56,0.8));
   //background-size:cover;
   //background-repeat: no-repeat;
   //background-blend-mode: overlay;
   //opacity: 85%;
-
 }
 
 .hero__title {
