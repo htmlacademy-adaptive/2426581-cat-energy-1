@@ -3,37 +3,34 @@
   width: 280px;
   padding: 0 20px;
 }
-  .extras__name {
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    a {
-    color: #222222;
-    }
-  }
 
-  .extras__title {
-    font-family: "Oswald", serif;
-    font-size: 24px;
-    line-height: 24px;
-    margin: 0 0 49px 0;
-    padding: 0 24px 0 0; // уточнить
-  }
+.extras__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  .extras__amount:last-child {
-    margin: 0 0 10px 0;
-  }
+.extras__link {
+  color: #222222;
+}
 
-  .extras__button:not(:last-child) {
-    margin: 0 0 32px 0;
-  }
+.extras__title {
+  font-family: "Oswald", serif;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 49px 0;
+  padding: 0 24px 0 0; // уточнить
+}
 
-  .extras__button:last-child {
-    margin: 0 0 54px 0;
-  }
+.extras__amount:last-child {
+  margin: 0 0 10px 0;
+}
 
+.extras__button:not(:last-child) {
+  margin: 0 0 32px 0;
+}
 
-
-
-
+.extras__button:last-child {
+  margin: 0 0 54px 0;
+}

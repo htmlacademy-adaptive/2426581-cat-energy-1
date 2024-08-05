@@ -1,6 +1,7 @@
 .program__list {
   width: 320px;
   padding: 0 20px;
+  }
 
   .program__item {
     display: flex;
@@ -8,11 +9,14 @@
     width: 280px;
     background-color: #d9d9d9;
     }
-  }
+
+
+
 
   .program__title {
     margin-bottom: 29px;
   }
+
   .program__description {
     font-family: "Lato", sans-serif;
     font-size: 14px;
@@ -31,4 +35,3 @@
   //margin: 0 0 20px;
   padding: 0 20px;
 }
-
