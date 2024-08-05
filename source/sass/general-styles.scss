@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   //align-items: center;
   width: 320px;
-  height: 900%; // ! выставил так много, тк при 100% охватывает только шапку
+  height: 100%;
   font-family: "Lato", "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -15,7 +15,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   //padding: 0 20px;
-  outline: solid 5px #ff0000;
+  outline: solid 5px #ff0000; // ! c outline какая-то дичь - он явно не охватывает границы body
 }
 
 ul {

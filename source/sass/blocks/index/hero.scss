@@ -8,36 +8,36 @@ min-height: 480px;
 margin: 0;
 
 .hero__content {
-height: min-content; // нужна ли здесь высота?
-background-color:  #68b738;
-  // ! Q с наложением фона на изображение еще не разобрался
-                         //linear-gradient(rgba(104,183,56,0.8));
+  width: 320px;
+  height: 320px; // ! Q нужна ли здесь высота?
+  background-color: #68b738;
+  background-blend-mode: overlay;
   //background-size:cover;
   //background-repeat: no-repeat;
-  //background-blend-mode: overlay;
-  //opacity: 85%;
-}
+  opacity: 85%;
+  }
 
 .hero__title {
-color: #ffffff;
-text-align: center;
-margin: 0 auto;
-padding: 27px 36px 25px;
+  width: 280px;
+  color: #ffffff;
+  text-align: center;
+  //margin: 0 auto;
+padding: 27px 16px 25px;
 }
 
 .hero__slogan {
-      font-size: 14px;
-      color: #ffffff;
-      text-align: center;
-      margin: 0 auto;
-padding: 0 62px 164px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 62px 164px;
   }
 
   .hero__button {
-    position:absolute;
-    bottom: 0;
-    margin: 0 0 20px 0;
-    }
+  position:absolute;
+  bottom: 0;
+  margin: 0 0 20px 0;
+  }
 }
 
 
