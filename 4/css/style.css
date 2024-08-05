@@ -190,9 +190,8 @@ p {
 }
 .hero .hero__content {
   width: 320px;
-  height: 320px;
+  height: 302px;
   background-color: #68b738;
-  background-blend-mode: overlay;
   opacity: 85%;
 }
 .hero .hero__title {
