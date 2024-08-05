@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 320px;
-  height: 900%;
+  height: 100%;
   font-family: "Lato", "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -189,14 +189,17 @@ p {
   margin: 0;
 }
 .hero .hero__content {
-  height: min-content;
+  width: 320px;
+  height: 320px;
   background-color: #68b738;
+  background-blend-mode: overlay;
+  opacity: 85%;
 }
 .hero .hero__title {
+  width: 280px;
   color: #ffffff;
   text-align: center;
-  margin: 0 auto;
-  padding: 27px 36px 25px;
+  padding: 27px 16px 25px;
 }
 .hero .hero__slogan {
   font-size: 14px;
