@@ -28,7 +28,7 @@ dl {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  }
+}
 
 a {
   display: block;
@@ -81,10 +81,9 @@ h3 {
 }
 
 .button--light {
-color: #444444;
-background-color: #f2f2f2;
+  color: #444444;
+  background-color: #f2f2f2;
 }
-
 
 p {
   font-family: "Lato", sans-serif;
@@ -96,8 +95,8 @@ p {
 }
 
 .main-container {
-display: flex;
-flex-direction: column;
-margin: 0;
-//padding: 0 20px; // ! разобраться с паддингами секций и общего main контейнера
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  //padding: 0 20px; // ! разобраться с паддингами секций и общего main контейнера
 }
