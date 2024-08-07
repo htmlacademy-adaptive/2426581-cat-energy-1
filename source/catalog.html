@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Каталог продукции</title>
   </head>
-  <body class="page__body" style="width: 320px">
-    <header class="header">
-      <!--ЛОГО-->
-      <a class="logo logo--icon" href="index.html">
-        <img
-          src="img/logo-icon.svg"
-          width="33" height="38"
-          alt="логотип магазина.">
-      </a>
-      <a class="logo logo--name" href="index.html">
-        <img src="img/logo-name.svg"
-          width="101" height="18"
-          alt="Кэт энерджи.">
-      </a>
+
+  <body class="page__body">
+    <header class="header header--catalog">
+      <div class="header__wrapper">
+        <!--ЛОГО-->
+        <a class="logo logo--icon" href="index.html">
+          <img
+            src="img/logo-icon.svg"
+            width="33"
+            height="38"
+            alt="логотип магазина."
+          />
+        </a>
+        <a class="logo logo--name" href="index.html">
+          <img
+            src="img/logo-name.svg"
+            width="101"
+            height="18"
+            alt="Кэт энерджи."
+          />
+        </a>
+        <span>
+          <img
+            class="menu-button"
+            src="img/burger-button.svg"
+            width="24"
+            height="20"
+            alt="Кнопка меню."
+          />
+        </span>
+      </div>
       <!--НАВИГАЦИЯ-->
       <nav class="navigation">
         <button class="navigation__toggle" type="button">
@@ -28,13 +46,15 @@
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current"
+            <a
+              class="navigation__link navigation__link--current"
               href="catalog.html"
-              aria-current="page">Каталог продукции</a>
+              aria-current="page"
+              >Каталог продукции</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="form.html">Подбор программы
-            </a>
+            <a href="form.html">Подбор программы </a>
           </li>
         </ul>
       </nav>
@@ -47,8 +67,11 @@
           <ul class="catalog__list">
             <li class="catalog__item product">
               <a class="product__link" href="#" tabindex="-1">
-                <img class="product__img" src="img/catalog-1.png"
-                  alt="Cat Energy Pro 500 г">
+                <img
+                  class="product__img"
+                  src="img/catalog-1.png"
+                  alt="Cat Energy Pro 500 г"
+                />
                 <!-- Если можно не ставить в некоторых случаях точку в alt - не возражаю нисколько-->
               </a>
               <h2 class="product__name">
@@ -64,13 +87,17 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">700&nbsp;₽</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="catalog__item product">
               <a class="product__link" href="#" tabindex="-1">
-                <img class="product__img" src="img/catalog-2.png"
-                  alt="Cat Energy Pro 1000 г">
+                <img
+                  class="product__img"
+                  src="img/catalog-2.png"
+                  alt="Cat Energy Pro 1000 г"
+                />
               </a>
               <h2 class="product__name">
                 <a href="#">Cat Energy Pro 1000&nbsp;г</a>
@@ -83,13 +110,17 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">1000&nbsp;₽</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="catalog__item product">
               <a class="product__link" href="#" tabindex="-1">
-                <img class="product__img" src="img/catalog-3.png"
-                  alt="Cat Energy Pro 500 г">
+                <img
+                  class="product__img"
+                  src="img/catalog-3.png"
+                  alt="Cat Energy Pro 500 г"
+                />
               </a>
               <h2 class="product__name">
                 <a href="#">Cat Energy Pro 500&nbsp;г</a>
@@ -102,13 +133,17 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">700&nbsp;р</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="catalog__item product">
               <a class="product__link" href="#" tabindex="-1">
-                <img class="product__img" src="img/catalog-4.png"
-                  alt="Cat Energy Pro 1000 г">
+                <img
+                  class="product__img"
+                  src="img/catalog-4.png"
+                  alt="Cat Energy Pro 1000 г"
+                />
               </a>
               <h2 class="product__name">
                 <a href="#">Cat Energy Pro 1000&nbsp;г</a>
@@ -121,13 +156,17 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">1000&nbsp;₽</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="catalog__item product">
               <a class="product__link" href="#" tabindex="-1">
-                <img class="product__img" src="img/catalog-5.png"
-                  alt="Cat Energy Slim 500 г"></a>
+                <img
+                  class="product__img"
+                  src="img/catalog-5.png"
+                  alt="Cat Energy Slim 500 г"
+              /></a>
               <h2 class="product__name">
                 <a href="#">Cat Energy Slim 500&nbsp;г</a>
               </h2>
@@ -139,17 +178,22 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">400&nbsp;₽</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="catalog__item product">
-
               <a class="product__link" href="#">
-                <img class="product__img" src="img/catalog-6.png"
-                  alt="Cat Energy Slim 1000 г">
+                <img
+                  class="product__img"
+                  src="img/catalog-6.png"
+                  alt="Cat Energy Slim 1000 г"
+                />
               </a>
               <h2 class="product__name">
-                <a href="#">Cat Energy Slim 1000&nbsp;г</a>
+                <a class="product__name__link" href="#"
+                  >Cat Energy Slim 1000&nbsp;г</a
+                >
               </h2>
               <dl class="product__info">
                 <dt class="product__spec">Масса</dt>
@@ -159,13 +203,17 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">700&nbsp;₽</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="catalog__item product">
               <a class="product__link" href="#" tabindex="-1">
-                <img class="product__img" src="img/catalog-7.png"
-                  alt="Cat Energy Slim 500 г">
+                <img
+                  class="product__img"
+                  src="img/catalog-7.png"
+                  alt="Cat Energy Slim 500 г"
+                />
               </a>
               <h2 class="product__name">
                 <a href="#">Cat Energy Slim 500&nbsp;г</a>
@@ -178,15 +226,19 @@
                 <dt class="product__spec">Цена</dt>
                 <dd class="product__essence">500&nbsp;₽</dd>
               </dl>
-              <button class="product__button button"
-                type="button">Заказать</button>
+              <button class="product__button button button--main" type="button">
+                Заказать
+              </button>
             </li>
-            <!-- ! Q модификаторы правильно прописал? парафграфы внутри так оставляем (классы к ним - позже)-->
-            <li class="catalog__item product product--more">
-              <p>показать еще 100500 товаров</p>
-              <p>На самом деле вкусов гораздо больше</p>
-              <a class="product__button product__button--more button"
-                href="#">Показать все</a>
+            <!-- ! Q кривые имена классов/модов,еще подумаю-->
+            <li class="catalog__item product">
+              <h2 class="product__name product__name--more">
+                показать еще 100500 товаров
+              </h2>
+              <p class="product__more">На самом деле вкусов гораздо больше!</p>
+              <a class="product__button button button--light" href="#"
+                >Показать все</a
+              >
             </li>
           </ul>
         </div>
@@ -198,7 +250,7 @@
           <ul class="extras__list">
             <li class="extras__item">
               <h3 class="extras__name">
-                <a href="#">Сахарозаменитель</a>
+                <a class="extras__link" href="#">Сахарозаменитель</a>
               </h3>
               <dl class="extras__info">
                 <dt class="extras__volume visually-hidden">Объем</dt>
@@ -206,12 +258,13 @@
                 <dt class="extras__price visually-hidden">Цена</dt>
                 <dd class="extras__amount">200&nbsp;₽</dd>
               </dl>
-              <button class="extras__button button"
-                type="button">Заказать</button>
+              <button class="extras__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="extras__item">
               <h3 class="extras__name">
-                <a href="#">Питьевая вода</a>
+                <a class="extras__link" href="#">Питьевая вода</a>
               </h3>
               <dl class="extras__info">
                 <dt class="extras__volume visually-hidden">Объем</dt>
@@ -219,12 +272,13 @@
                 <dt class="extras__price visually-hidden">Цена</dt>
                 <dd class="extras__amount">50&nbsp;₽</dd>
               </dl>
-              <button class="extras__button button"
-                type="button">Заказать</button>
+              <button class="extras__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="extras__item">
               <h3 class="extras__name">
-                <a href="#">Молоко</a>
+                <a class="extras__link" href="#">Молоко</a>
               </h3>
               <dl class="extras__info">
                 <dt class="extras__volume visually-hidden">Объем</dt>
@@ -232,12 +286,13 @@
                 <dt class="extras__price visually-hidden">Цена</dt>
                 <dd class="extras__amount">100&nbsp;₽</dd>
               </dl>
-              <button class="extras__button button"
-                type="button">Заказать</button>
+              <button class="extras__button button" type="button">
+                Заказать
+              </button>
             </li>
             <li class="extras__item">
               <h3 class="extras__name">
-                <a href="#">Витамины</a>
+                <a class="extras__link" href="#">Витамины</a>
               </h3>
               <dl class="extras__info">
                 <dt class="extras__volume visually-hidden">Объем</dt>
@@ -245,65 +300,91 @@
                 <dt class="extras__price visually-hidden">Цена</dt>
                 <dd class="extras__amount">300&nbsp;₽</dd>
               </dl>
-              <button class="extras__button button"
-                type="button">Заказать</button>
+              <button class="extras__button button" type="button">
+                Заказать
+              </button>
             </li>
           </ul>
         </div>
       </section>
-      <p class="gift">
-        <span class="gift__conditions">Закажите все и получите чехол для
-          кота в подарок</span>
-      </p>
-      <section class="contacts">
-        <h2 class="contacts__invitation">Приглашаем к сотрудничеству
-          дилеров!</h2>
-        <p class="contacts__address">ул.&nbsp;Большая Конюшенная,
-          д.&nbsp;19/8 Санкт-Петербург</p>
-        <img src="img/location.png" alt="карта района города."
+      <div class="gift">
+        <p class="gift__conditions">
+          Закажите все и получите чехол для кота в подарок
+        </p>
+      </div>
+      <section class="contacts contacts--darker">
+        <div class="contacts__text">
+          <h3 class="contacts__invitation">
+            Приглашаем к сотрудничеству дилеров!
+          </h3>
+          <p class="contacts__address">
+            ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8 Санкт-Петербург
+          </p>
+        </div>
+        <img
+          src="img/location.png"
+          alt="карта района города."
           width="320"
-          height="362">
+          height="362"
+        />
       </section>
     </main>
     <!--FOOTER-->
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="logo logo--name" href="index.html">
-          <img src="img/logo-name.svg"
-            width="128" height="24"
-            alt="Кэт энерджи.">
+          <img
+            src="img/logo-name.svg"
+            width="128"
+            height="24"
+            alt="Кэт энерджи."
+          />
         </a>
         <section class="footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte"
-                href="https://vk.com/htmlacademy">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+              >
                 <span class="visually-hidden">Мы во ВКонтакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube"
-                href="https://www.youtube.com/user/htmlacademyru">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/user/htmlacademyru"
+              >
                 <span class="visually-hidden">Мы на Ютубе</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram"
-                href="https://t.me/htmlacademy">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
+              >
                 <span class="visually-hidden">Мы в Телеграме</span>
               </a>
             </li>
           </ul>
         </section>
         <p class="footer__developer developer">
-          <a class="developer__link developer__link--academy"
-            href="https://htmlacademy.ru/intensive/adaptive">HTML
-            Academy
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34"
-              fill="none" viewBox="0 0 27 34">
-              <path fill="#666"
-                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
+          <a
+            class="developer__link developer__link--academy"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            >HTML Academy
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27"
+              height="34"
+              fill="none"
+              viewBox="0 0 27 34"
+            >
+              <path
+                fill="#666"
+                d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
+              />
             </svg>
           </a>
         </p>

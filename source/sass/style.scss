@@ -1,1 +1,25 @@
-// Начните писать стили здесь
+// Общие стили
+@import "fonts.scss";
+@import "general-styles.scss";
+// Контакты
+@import "blocks/contacts.scss";
+// Шапка
+@import "blocks/header.scss";
+@import "blocks/nav-menu.scss";
+// Главная
+@import "blocks/hero.scss";
+@import "blocks/program.scss";
+@import "blocks/usage.scss";
+@import "blocks/example.scss";
+// Форма
+@import "blocks/questionary.scss";
+@import "blocks/form.scss";
+// Каталог
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/extras.scss";
+@import "blocks/gift.scss";
+// Подвал
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/developer.scss";

@@ -1,0 +1,40 @@
+.example {
+  background-color: #eaeaea;
+  padding: 0 20px;
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin: 0 auto 20px;
+}
+
+.example__report {
+  display: flex;
+  flex-direction: column;
+  //пока что оставлю список таковым
+}
+
+.example__report__item {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.example__report__item--small {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.example__report__amount {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__report__amount:last-child {
+  margin-bottom: 20px;
+}
