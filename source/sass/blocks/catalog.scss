@@ -7,7 +7,17 @@
 }
 
 .catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
   margin: 0 0 41px 0;
+  padding: 0;
+}
+
+.catalog__list {
+  list-style-type: none;
 }
 
 .catalog__item {
