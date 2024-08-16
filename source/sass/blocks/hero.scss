@@ -20,18 +20,27 @@
 
 .hero__title {
   width: 280px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 36px;
   color: #ffffff;
   text-align: center;
-  //margin: 0 auto;
+  margin: 0;
   padding: 27px 16px 25px;
 }
 
 .hero__slogan {
+  width: 280px;
+  font-family: "Oswald", serif;
   font-size: 14px;
+  line-height: 14px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
   margin: 0 auto;
-  padding: 0 62px 164px;
+  padding: 0 20px; // padding-bottom: 164px;
 }
 
 .hero__button {
