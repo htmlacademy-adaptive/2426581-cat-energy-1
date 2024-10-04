@@ -1,4 +1,5 @@
 html {
+  width: 320px;
   height: 100%;
 }
 
@@ -12,18 +13,18 @@ body {
   color: #444444;
   background-color: #ffffff;
   margin: 0;
+  outline: solid 3px #ff0000; // ! c outline какая-то дичь - он явно не охватывает границы body
 }
 
 .page__body {
   width: 320px;
-  outline: solid 5px #ff0000; // ! c outline какая-то дичь - он явно не охватывает границы body
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
   margin: 0;
-  //padding: 0 20px; // ! разобраться с паддингами секций и общего main контейнера
+  //padding: 0 20px; // ! разобраться с паддингами секций и общего main-контейнера
 }
 
 a {
@@ -31,11 +32,13 @@ a {
   text-decoration: none;
 }
 
+// пока не знаю как убрать отсюда свойства для заголовков так, чтобы избежать лишнего дублирования свойств для каждого заголовка внутри разных блоков
+
 h2 {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-size: 24px;
-  line-height: 37px; // пока не знаю как убрать отсюда свойства для заголовков так, чтобы избежать лишнего дублирования свойств для каждого заголовка внутри разных блоков
+  line-height: 37px;
   color: #000000;
   font-weight: normal;
   margin: 0;
