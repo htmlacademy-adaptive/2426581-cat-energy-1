@@ -54,15 +54,15 @@
             <ul class="form__list">
               <li class="form__item">
                 <!--пока такие базовые классы для списков-->
-                <label class="form__name" for="form__name">Имя*</label>
+                <label class="label__form label__form--name" for="form__name">Имя*</label>
                 <input class="form__field" placeholder="Барсик" type="text" name="form__name" id="form__name">
               </li>
               <li class="form__item">
-                <label for="form__weight">Вес (кг):*</label>
+                <label class="label__form label__form--weight" for="form__weight">Вес (кг):*</label>
                 <input class="form__field" placeholder="7" type="number" name="form__weight" id="form__weight">
               </li>
               <li class="form__item">
-                <label for="form__age">Возраст (лет):</label>
+                <label class="label__form label__form--age" for="form__age">Возраст (лет):</label><!--для этого и следующего лейбла придумал вот такой класс, чтобы выставить паддинг между именем и инпутом-->
                 <input class="form__field" placeholder="7" type="number" name="form__age" id="form__age">
               </li>
             </ul>
@@ -71,20 +71,16 @@
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="weight-changes weight-changes--slim">
-                  <input class="form__field form__field--radio" type="radio" name="weight-changes" value="slim" checked>Похудение
-                </label>
+                <input class="form__radio" type="radio" name="weight-changes" value="slim" checked>
+                <label class="label__weight label__weight--slim">Похудение</label>
               </li>
               <li class="form__item">
-                <label class="weight-changes weight-changes--pro">
-                  <input class="form__field form__field--radio" type="radio" name="weight-changes" value="pro">Набор массы
-                </label>
+                <input class="form__radio" type="radio" name="weight-changes" value="pro">
+                <label class="label__weight label__weight--pro">Набор массы</label>
               </li>
               <li class="form__item">
-                <label class="weight-changes weight-changes--advise">
-                  <input class="form__field form__field--radio" type="radio" name="weight-changes" value="advise">Не знаю (нужен ваш
-                  совет)
-                </label>
+                <input class="form__radio" type="radio" name="weight-changes" value="advise">
+                <label class="label__weight label__weight--advise">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -112,23 +108,22 @@
             <ul class="form__list">
               <li class="form__item">
                 <input class="form__range" type="checkbox" id="sweetener" checked>
-                <label for="sweetener">Сахарозаменитель</label>
-                <!--тут пока не понимаю что с классами для лейблов сделать, чтобы не было конфликта с секциями Доп товаров в Каталоге-->
+                <label class="label__extras" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="form__item">
                 <input class="form__range" type="checkbox" id="water">
-                <label for="water">Питьевая вода</label>
+                <label class="label__extras" for="water">Питьевая вода</label>
               </li>
               <li class="form__item">
                 <input class="form__range" type="checkbox" id="milk">
-                <label for="milk">Молоко</label>
+                <label class="label__extras" for="milk">Молоко</label>
               </li>
               <li class="form__item">
                 <input class="form__range" type="checkbox" id="vitamins">
-                <label for="vitamins">Витамины</label>
+                <label class="label__extras" for="vitamins">Витамины</label>
               </li>
             </ul>
-            <a class="button" href="#">Отправить заявку</a>
+            <a class="button button--application" href="#">Отправить заявку</a>
             <p class="required-fields">* - Обязательные поля</p>
           </fieldset>
         </form>

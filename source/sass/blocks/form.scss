@@ -4,14 +4,32 @@
   padding: 0;
 }
 
+.form__list {
+  padding: 0;
+}
+
 .form__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; // надо разобраться с шириной инпутов под макет!
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
   margin: 0 0 14px 0;
   padding: 0;
+}
+
+.label__form {
+  padding: 0 15px 0 0;
+}
+
+.label__weight,
+.label__extras {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+.form__text {
+  padding: 0 13px 0 0;
 }
 
 .form__data,
@@ -27,11 +45,24 @@
 }
 
 .required-fields {
+  font-family: "Lato", serif;
+  font-size: 14;
+  line-height: 16;
+  color: #000000;
   padding: 21px 63px 32px 64px;
 }
 
 .placeholder {
   width: 280px;
   height: 150px;
+  font-family: "Oswald", serif;
+  font-size: 16;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
   margin: 0 0 23px 0;
+}
+
+.button--application {
+  margin: 0 0 20px 0;
 }
