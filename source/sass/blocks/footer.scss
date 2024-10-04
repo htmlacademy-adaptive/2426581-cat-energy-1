@@ -1,6 +1,8 @@
 
 .footer {
-  background-color: #eaeaea;
+  width: 320px;
+  min-height: 240px;
+  background-color: #f2f2f2;
 }
 
 .footer__wrapper {
@@ -8,4 +10,9 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
+}
+
+.developer {
+  width: 280px;
+  margin: 0;
 }

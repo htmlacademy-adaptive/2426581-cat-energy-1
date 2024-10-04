@@ -1,4 +1,5 @@
 .example {
+  width: 280px;
   background-color: #eaeaea;
   padding: 0 20px;
 }
@@ -8,7 +9,9 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
-  margin-bottom: 40px;
+  text-align: left;
+  margin: 0 0 40px 0;
+  padding: 25px 85px 0 0;
 }
 
 .example__text {
@@ -24,6 +27,10 @@
   display: flex;
   flex-direction: column;
   //пока что оставлю список таковым
+}
+
+.example__report__list {
+  margin: 0 0 20px 0;
 }
 
 .example__report__item {
