@@ -1,18 +1,21 @@
 .gift {
   width: 280px;
-  height: 290px;
-  background-image: url("/source/img/cat-bag.jpg");
+  min-height: 290px;
+  background-image: url("/source/img/cat-bag.jpg"); // в этом блоке у меня проблемы в частности с размерами области, закрашенной зеленым (паддинги ее не ограничивают почему-то)
   background-repeat: no-repeat;
   //background-size: ;
   background-color: #68b738;
   opacity: 85%;
+  margin: 0 0 35px 0;
   padding: 0 20px;
 }
 
 .gift__conditions {
+  width: 280px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  padding: 187px 61px 43px 58px;
+  margin: 0;
+  padding: 0;
 }
