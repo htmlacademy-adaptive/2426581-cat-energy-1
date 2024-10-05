@@ -4,23 +4,6 @@
   padding: 0 20px;
 }
 
-.extras__name {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
-.extras__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.extras__link {
-  color: #222222;
-}
-
 .extras__title {
   font-family: "Oswald", serif;
   font-size: 24px;
@@ -29,14 +12,54 @@
   padding: 0 24px 0 0; // уточнить
 }
 
-.extras__amount:last-child {
-  margin: 0 0 10px 0;
+.extras__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.extras__button:not(:last-child) {
-  margin: 0 0 32px 0;
+.extras__item:not(:last-child) {
+  margin: 0 0 31px 0;
 }
 
-.extras__button:last-child {
+.extras__item:last-child {
   margin: 0 0 54px 0;
+}
+
+.extras__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 0 13px 0;
+}
+
+.extras__link {
+  color: #222222;
+}
+
+.extras__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 15px 0;
+}
+
+.extras__quantity,
+.extras__price,
+.extras__amount {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+//.extras__amount:last-child {  уже не помню чего здесь хотел
+//margin: 0 0 10px 0;
+//}
+
+.extras__button {
+  margin: 0;
 }
