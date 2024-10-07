@@ -3,14 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
   min-height: 480px;
   margin: 0;
 }
 
 .hero__content {
-  //width: 320px;
-  min-height: 302px; // ! Q нужна ли здесь высота?
+  min-height: 302px; // !!! Q нужна ли здесь высота?
   background-color: #68b738;
   //background-blend-mode: overlay;
   //background-size:cover;
@@ -19,7 +17,6 @@
 }
 
 .hero__title {
-  //width: 280px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -32,7 +29,6 @@
 }
 
 .hero__slogan {
-  //width: 280px;
   font-family: "Oswald", serif;
   font-size: 14px;
   line-height: 14px;

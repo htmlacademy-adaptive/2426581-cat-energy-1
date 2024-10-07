@@ -6,7 +6,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  //height: 100%;
+  // хммм, почему ,если убрать хейт - аутлайн работает как задано?
   font-family: "Lato", "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -16,13 +17,14 @@ body {
   outline: solid 3px #ff0000; // ! c outline какая-то дичь - он явно не охватывает границы body
 }
 
-.page__body {
-  width: 320px;
-}
+//.page__body {
+//width: 280px;
+//}
 
-.main-container {
+.container {
   display: flex;
   flex-direction: column;
+  //width: 280px;
   margin: 0;
   //padding: 0 20px; // ! разобраться с паддингами секций и общего main-контейнера
 }
