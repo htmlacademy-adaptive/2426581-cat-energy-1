@@ -1,0 +1,61 @@
+html {
+  width: 320px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  //height: 100%;
+  // хммм, почему ,если убрать хейт - аутлайн работает всю высоту, а со включенным - он охватывает только +/- хедер?
+  font-family: "Lato", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  background-color: #ffffff;
+  margin: 0;
+  outline: solid 3px #ff0000;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+// пока не знаю как убрать отсюда свойства для заголовков так, чтобы избежать лишнего дублирования свойств для каждого заголовка внутри разных блоков
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  font-weight: normal;
+  margin: 0;
+  //padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  margin: 0;
+}
+
+.button--light {
+  color: #444444;
+  background-color: #f2f2f2;
+}

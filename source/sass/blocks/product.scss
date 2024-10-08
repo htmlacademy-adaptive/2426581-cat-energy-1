@@ -1,0 +1,48 @@
+.product {
+  width: 280px;
+}
+
+.product__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product__name__link {
+  color: #222222;
+}
+
+.product__name--more {
+  padding: 78px 30.5px 0;
+  margin: 0 0 8px 0;
+}
+
+.product__more {
+  margin: 0 0 21px 0;
+  padding: 0 10.5px;
+}
+
+.product__info { //dl список
+  margin: 0 0 17px 0;
+}
+
+.product__parameter,
+.product__essence {
+  font-family: "Lato", serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product__essence:last-child {
+  margin: 0 0 21px 0;
+}
+
+//.product__# { } класс-болванка, если что-то вместо essense придумаю
+
+.product__button {
+  // еще одна кнопка, где не вышло отцентровать текст
+  margin: 0 0 25px 0;
+}

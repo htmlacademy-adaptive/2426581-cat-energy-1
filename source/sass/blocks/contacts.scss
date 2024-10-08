@@ -1,0 +1,31 @@
+
+// ! хочется включить эту секцию в футер
+
+.contacts--darker {
+  background-color: #f2f2f2;
+}
+
+.contacts__text {
+  display: flex;
+}
+
+.contacts__invitation {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: start;
+  color: #111111;
+  margin: 0 0 26px 0;
+  padding: 26px 0 0 20px;
+}
+
+.contacts__address {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right; // тут пока текст не получилось распределить внутри абзаца как в макете. вероятно, это можно сделать как-то иначе без text-align
+  color: #444444;
+  margin: 0 0 26px 0;
+  padding: 26px 20px 0 0;
+}

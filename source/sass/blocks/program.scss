@@ -1,0 +1,48 @@
+.program__list {
+  text-decoration: none;
+  margin: 0 0 20px 0;
+  padding: 0 20px;
+}
+
+.program__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.program__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: normal;
+  margin-bottom: 29px;
+  //padding: 30px 80px 0 90px;
+  // ЗАПУТАЛСЯ - в процессе простановки свойств и значений шрифтов для разных тайтлов и абзацев вспомнил, что общие свойства уже вешал на h1-2 и тд, например. Ладно, пусть пока останется так, поговорим на код-ревью. Визуальное сходство с макетом, во всяком случае, стало более заметным, когда задал свойства классам тайтлов, а не тегам h1+
+}
+
+.program__title--slim {
+  padding: 30px 80px 0 90px;
+}
+
+.program__title--pro {
+  padding: 30px 32px 0 70px;
+}
+
+.program__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0 auto 38px;
+  padding: 0 20px;
+}
+
+.program__catalog {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0 20px;
+  margin: 0 0 18px 0;
+}
